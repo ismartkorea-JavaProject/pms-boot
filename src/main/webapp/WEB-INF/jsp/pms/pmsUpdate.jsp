@@ -21,55 +21,55 @@
 			    <input type="hidden" name="no"  value="<c:out value='${result.no}'/>"/>
 				<table cellpadding="0" cellspacing="0">
 					<tr>
-						<td>이름</td><td><c:out value='${result.no}'/></td>
+						<td>이름</td><td><input type="text" id="name" name="name" value=""/></td>
 					</tr>
 					<tr>
-						<td>영문명</td><td><c:out value='${result.eNm}'/></td>
+						<td>영문명</td><td><input type="text" id="eNm" name="eNm" value=""/></td>
 					</tr>
 					<tr>
-						<td>별명</td><td><c:out value='${result.nickNm}'/></td>
+						<td>별명</td><td><input type="text" id="nickNm" name="nickNm" value=""/></td>
 					</tr>
 					<tr>
-						<td>나이</td><td><c:out value='${result.age}'/></td>
+						<td>나이</td><td><input type="text" id="age" name="age" value=""/></td>
 					</tr>
 					<tr>
-						<td>성별</td><td><c:out value='${result.sex}'/></td>
+						<td>성별</td><td><input type="text" id="sex" name="sex" value=""/></td>
 					</tr>
 					<tr>
-						<td>주소1</td><td><c:out value='${result.address1}'/></td>
+						<td>주소1</td><td><input type="text" id="address1" name="address2" value=""/></td>
 					</tr>
 					<tr>
-						<td>주소2</td><td><c:out value='${result.address2}'/></td>
+						<td>주소2</td><td><input type="text" id="address2" name="address2" value=""/></td>
 					</tr>					
 																																			<tr>
-						<td>우편번호</td><td><c:out value='${result.postNo}'/></td>
+						<td>우편번호</td><td><input type="text" id="postNo" name="postNo" value=""/></td>
 					</tr>
 					<tr>
-						<td>직업</td><td><c:out value='${result.job}'/></td>
+						<td>직업</td><td><input type="text" id="job" name="job" value=""/></td>
 					</tr>
 					<tr>
-						<td>SNS1</td><td><c:out value='${result.sns1}'/></td>
+						<td>SNS1</td><td><input type="text" id="sns1" name="sns1" value=""/></td>
 					</tr>
 					<tr>
-						<td>SNS2</td><td><c:out value='${result.sns2}'/></td>
+						<td>SNS2</td><td><input type="text" id="sns2" name="sns2" value=""/></td>
 					</tr>
 					<tr>
-						<td>SNS3</td><td><c:out value='${result.sns3}'/></td>
+						<td>SNS3</td><td><input type="text" id="sns3" name="sns3" value=""/></td>
 					</tr>
 					<tr>
-						<td>전화번호</td><td><c:out value='${result.telNo}'/></td>
+						<td>전화번호</td><td><input type="text" id="telNo" name="telNo" value=""/></td>
 					</tr>
 					<tr>
-						<td>휴대폰번호</td><td><c:out value='${result.cellNo}'/></td>
+						<td>휴대폰번호</td><td><input type="text" id="cellNo" name="cellNo" value=""/></td>
 					</tr>
 					<tr>
-						<td>메모1</td><td><c:out value='${result.memo1}'/></td>
+						<td>메모1</td><td><input type="text" id="memo1" name="memo1" value=""/></td>
 					</tr>
 					<tr>
-						<td>메모2</td><td><c:out value='${result.memo2}'/></td>
+						<td>메모2</td><td><input type="text" id="memo2" name="memo2" value=""/></td>
 					</tr>
 					<tr>
-						<td>메모3</td><td><c:out value='${result.memo3}'/></td>
+						<td>메모3</td><td><input type="text" id="memo3" name="memo3" value=""/></td>
 					</tr>																																										
 				</table>    
 			 </form:form>
