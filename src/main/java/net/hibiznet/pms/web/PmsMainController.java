@@ -1,4 +1,4 @@
-package net.hibzinet.pms.web;
+package net.hibiznet.pms.web;
 
 import java.util.ArrayList;
 
