@@ -1,4 +1,4 @@
-package egovframework.com.config;
+package net.hibiznet.pms.framework.com.config;
 
 import javax.annotation.PostConstruct;
 import javax.sql.DataSource;

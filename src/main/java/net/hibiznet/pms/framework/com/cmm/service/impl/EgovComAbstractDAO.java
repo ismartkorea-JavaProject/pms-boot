@@ -1,4 +1,4 @@
-package egovframework.com.cmm.service.impl;
+package net.hibiznet.pms.framework.com.cmm.service.impl;
 
 import javax.annotation.Resource;
 

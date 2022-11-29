@@ -1,10 +1,10 @@
-package egovframework.let.uat.uia.service.impl;
+package net.hibiznet.pms.framework.let.uat.uia.service.impl;
 
-import egovframework.com.cmm.LoginVO;
-import egovframework.let.uat.uia.service.EgovLoginService;
-import egovframework.let.utl.fcc.service.EgovNumberUtil;
-import egovframework.let.utl.fcc.service.EgovStringUtil;
-import egovframework.let.utl.sim.service.EgovFileScrty;
+import net.hibiznet.pms.framework.com.cmm.LoginVO;
+import net.hibiznet.pms.framework.let.uat.uia.service.EgovLoginService;
+import net.hibiznet.pms.framework.let.utl.fcc.service.EgovNumberUtil;
+import net.hibiznet.pms.framework.let.utl.fcc.service.EgovStringUtil;
+import net.hibiznet.pms.framework.let.utl.sim.service.EgovFileScrty;
 
 import org.egovframe.rte.fdl.cmmn.EgovAbstractServiceImpl;
 

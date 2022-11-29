@@ -1,4 +1,4 @@
-package egovframework.com.cmm.web;
+package net.hibiznet.pms.framework.com.cmm.web;
 
 import java.util.List;
 
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import egovframework.com.cmm.EgovWebUtil;
+import net.hibiznet.pms.framework.com.cmm.EgovWebUtil;
 
 import org.egovframe.rte.fdl.property.EgovPropertyService;
 

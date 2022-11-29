@@ -1,4 +1,4 @@
-package egovframework.let.cop.bbs.service.impl;
+package net.hibiznet.pms.framework.let.cop.bbs.service.impl;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,12 +10,12 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
-import egovframework.com.cmm.service.EgovFileMngService;
-import egovframework.com.cmm.service.FileVO;
-import egovframework.let.cop.bbs.service.Board;
-import egovframework.let.cop.bbs.service.BoardVO;
-import egovframework.let.cop.bbs.service.EgovBBSManageService;
-import egovframework.let.utl.fcc.service.EgovDateUtil;
+import net.hibiznet.pms.framework.com.cmm.service.EgovFileMngService;
+import net.hibiznet.pms.framework.com.cmm.service.FileVO;
+import net.hibiznet.pms.framework.let.cop.bbs.service.Board;
+import net.hibiznet.pms.framework.let.cop.bbs.service.BoardVO;
+import net.hibiznet.pms.framework.let.cop.bbs.service.EgovBBSManageService;
+import net.hibiznet.pms.framework.let.utl.fcc.service.EgovDateUtil;
 
 import org.egovframe.rte.fdl.cmmn.EgovAbstractServiceImpl;
 import org.egovframe.rte.fdl.property.EgovPropertyService;

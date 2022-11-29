@@ -1,4 +1,4 @@
-package egovframework.let.cop.bbs.web;
+package net.hibiznet.pms.framework.let.cop.bbs.web;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -16,18 +16,18 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springmodules.validation.commons.DefaultBeanValidator;
 
-import egovframework.com.cmm.EgovMessageSource;
-import egovframework.com.cmm.LoginVO;
-import egovframework.com.cmm.service.EgovFileMngService;
-import egovframework.com.cmm.service.EgovFileMngUtil;
-import egovframework.com.cmm.service.FileVO;
-import egovframework.com.cmm.util.EgovUserDetailsHelper;
-import egovframework.let.cop.bbs.service.Board;
-import egovframework.let.cop.bbs.service.BoardMaster;
-import egovframework.let.cop.bbs.service.BoardMasterVO;
-import egovframework.let.cop.bbs.service.BoardVO;
-import egovframework.let.cop.bbs.service.EgovBBSAttributeManageService;
-import egovframework.let.cop.bbs.service.EgovBBSManageService;
+import net.hibiznet.pms.framework.com.cmm.EgovMessageSource;
+import net.hibiznet.pms.framework.com.cmm.LoginVO;
+import net.hibiznet.pms.framework.com.cmm.service.EgovFileMngService;
+import net.hibiznet.pms.framework.com.cmm.service.EgovFileMngUtil;
+import net.hibiznet.pms.framework.com.cmm.service.FileVO;
+import net.hibiznet.pms.framework.com.cmm.util.EgovUserDetailsHelper;
+import net.hibiznet.pms.framework.let.cop.bbs.service.Board;
+import net.hibiznet.pms.framework.let.cop.bbs.service.BoardMaster;
+import net.hibiznet.pms.framework.let.cop.bbs.service.BoardMasterVO;
+import net.hibiznet.pms.framework.let.cop.bbs.service.BoardVO;
+import net.hibiznet.pms.framework.let.cop.bbs.service.EgovBBSAttributeManageService;
+import net.hibiznet.pms.framework.let.cop.bbs.service.EgovBBSManageService;
 
 import org.egovframe.rte.fdl.property.EgovPropertyService;
 import org.egovframe.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;

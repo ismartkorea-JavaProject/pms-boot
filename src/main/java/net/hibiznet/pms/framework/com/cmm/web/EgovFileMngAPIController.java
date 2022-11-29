@@ -1,4 +1,4 @@
-package egovframework.com.cmm.web;
+package net.hibiznet.pms.framework.com.cmm.web;
 
 import javax.annotation.Resource;
 
@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import egovframework.com.cmm.service.EgovFileMngService;
-import egovframework.com.cmm.service.FileVO;
-import egovframework.com.cmm.service.ResultVO;
+import net.hibiznet.pms.framework.com.cmm.service.EgovFileMngService;
+import net.hibiznet.pms.framework.com.cmm.service.FileVO;
+import net.hibiznet.pms.framework.com.cmm.service.ResultVO;
 
 /**
  * 파일 조회, 삭제, 다운로드 처리를 위한 컨트롤러 클래스

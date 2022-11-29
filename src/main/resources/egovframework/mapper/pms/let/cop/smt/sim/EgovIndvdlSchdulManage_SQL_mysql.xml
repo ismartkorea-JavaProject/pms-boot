@@ -4,7 +4,7 @@
 <mapper namespace="IndvdlSchdulManage">
 
 
-	<resultMap id="IndvdlSchdulManage" type="egovframework.let.cop.smt.sim.service.IndvdlSchdulManageVO">
+	<resultMap id="IndvdlSchdulManage" type="net.hibiznet.pms.framework.let.cop.smt.sim.service.IndvdlSchdulManageVO">
 		<result property="schdulId" column="SCHDUL_ID"/>
 		<result property="schdulSe" column="SCHDUL_SE"/>
 		<result property="schdulDeptId" column="SCHDUL_DEPT_ID"/>

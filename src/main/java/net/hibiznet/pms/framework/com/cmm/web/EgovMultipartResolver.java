@@ -1,4 +1,4 @@
-package egovframework.com.cmm.web;
+package net.hibiznet.pms.framework.com.cmm.web;
 
 /*
  * Copyright 2001-2006 The Apache Software Foundation.

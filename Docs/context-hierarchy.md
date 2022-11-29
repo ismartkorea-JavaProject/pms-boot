@@ -21,7 +21,7 @@ View 자원 이외의 공통적으로 이용하는 자원등을 구성할때 주
 <context-param>
 	<param-name>contextConfigLocation</param-name>
 	<param-value>
-		classpath*:egovframework/spring/com/context-*.xml
+		classpath*:framework/spring/com/context-*.xml
 	</param-value>
 </context-param> 
 
@@ -50,7 +50,7 @@ Controller, view resolvers등 Web과 관련된 빈들이 모두 여기에 해당
 	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 	<init-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/config/egovframework/springmvc/*.xml</param-value>
+		<param-value>/WEB-INF/config/framework/springmvc/*.xml</param-value>
 	</init-param>
 	<load-on-startup>1</load-on-startup>
 </servlet>

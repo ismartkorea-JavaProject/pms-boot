@@ -42,7 +42,7 @@ servletContext.addListener(listener);
 <context-param>
 	<param-name>contextConfigLocation</param-name>
 	<param-value>
-			classpath*:egovframework/spring/com/context-*.xml
+			classpath*:framework/spring/com/context-*.xml
 	</param-value>
 </context-param>
 ```
@@ -50,7 +50,7 @@ servletContext.addListener(listener);
 <EgovWebApplicationInitializer.class>
 
 ```java
-servletContext.setInitParameter("contextConfigLoaction", "classpath*:egovframework/spring/com/context-*.xml");
+servletContext.setInitParameter("contextConfigLoaction", "classpath*:framework/spring/com/context-*.xml");
 ```
 
 이때 기본 Root WebApplication의 contextClass는 [`XmlWebApplicationContext`](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/context/support/XmlWebApplicationContext.html)이고 기본 설정 파일 위치인 `contextConfigLoaction`은 `/WEB-INF/applicationContext.xml` 이다.
@@ -81,7 +81,7 @@ servletContext.addListener(listener);
 
 ```java
 @Configuration
-@ImportResource(value= {"classpath*:egovframework/spring/com/context-*.xml"	})
+@ImportResource(value= {"classpath*:framework/spring/com/context-*.xml"	})
 public class ContextApp {
 
 }
@@ -109,7 +109,7 @@ Servlet Web Application Context는 Servlet 안에서 초기화 되고 Servlet �
 	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 	<init-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/config/egovframework/springmvc/*.xml</param-value>
+		<param-value>/WEB-INF/config/framework/springmvc/*.xml</param-value>
 	</init-param>
 	<load-on-startup>1</load-on-startup>
 </servlet>
@@ -124,7 +124,7 @@ Servlet Web Application Context는 Servlet 안에서 초기화 되고 Servlet �
 
 ```java
 ServletRegistration.Dynamic dispatcher = servletContext.addServlet("action", new DispatcherServlet());
-dispatcher.setInitParameter("contextConfigLocation", "/WEB-INF/config/egovframework/springmvc/*.xml");
+dispatcher.setInitParameter("contextConfigLocation", "/WEB-INF/config/framework/springmvc/*.xml");
 dispatcher.setLoadOnStartup(1);
 
 dispatcher.addMapping("*.do");
@@ -153,7 +153,7 @@ dispatcher.addMapping("*.do");
 
 ```java
 @Configuration
-@ImportResource(value= { "/WEB-INF/config/egovframework/springmvc/*.xml" })
+@ImportResource(value= { "/WEB-INF/config/framework/springmvc/*.xml" })
 public class ContextWebDispatcherServlet {
 
 }

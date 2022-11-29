@@ -1,4 +1,4 @@
-package egovframework.let.main.service;
+package net.hibiznet.pms.framework.let.main.service;
 
 import java.io.Serializable;
 

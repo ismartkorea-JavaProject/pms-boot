@@ -1,9 +1,9 @@
-package egovframework.com.cmm.service;
+package net.hibiznet.pms.framework.com.cmm.service;
 
 import java.util.List;
 import java.util.Map;
 
-import egovframework.com.cmm.ComDefaultCodeVO;
+import net.hibiznet.pms.framework.com.cmm.ComDefaultCodeVO;
 
 
 

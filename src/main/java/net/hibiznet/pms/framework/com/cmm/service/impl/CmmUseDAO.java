@@ -1,9 +1,9 @@
-package egovframework.com.cmm.service.impl;
+package net.hibiznet.pms.framework.com.cmm.service.impl;
 
 import java.util.List;
 
-import egovframework.com.cmm.ComDefaultCodeVO;
-import egovframework.com.cmm.service.CmmnDetailCode;
+import net.hibiznet.pms.framework.com.cmm.ComDefaultCodeVO;
+import net.hibiznet.pms.framework.com.cmm.service.CmmnDetailCode;
 
 import org.springframework.stereotype.Repository;
 

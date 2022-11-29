@@ -1,4 +1,4 @@
-package egovframework.com.cmm.service;
+package net.hibiznet.pms.framework.com.cmm.service;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -26,7 +26,7 @@ import org.springframework.util.FileCopyUtils;
 import org.springframework.web.multipart.MultipartFile;
 //import java.util.HashMap;
 
-import egovframework.let.utl.fcc.service.EgovStringUtil;
+import net.hibiznet.pms.framework.let.utl.fcc.service.EgovStringUtil;
 
 import org.egovframe.rte.fdl.idgnr.EgovIdGnrService;
 import org.egovframe.rte.fdl.property.EgovPropertyService;

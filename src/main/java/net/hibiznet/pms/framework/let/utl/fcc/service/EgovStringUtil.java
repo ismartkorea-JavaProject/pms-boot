@@ -15,7 +15,7 @@
  *
  */
 
-package egovframework.let.utl.fcc.service;
+package net.hibiznet.pms.framework.let.utl.fcc.service;
 
 /*
  * Copyright 2001-2006 The Apache Software Foundation.

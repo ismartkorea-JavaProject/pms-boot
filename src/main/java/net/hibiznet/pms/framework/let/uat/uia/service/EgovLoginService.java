@@ -1,6 +1,6 @@
-package egovframework.let.uat.uia.service;
+package net.hibiznet.pms.framework.let.uat.uia.service;
 
-import egovframework.com.cmm.LoginVO;
+import net.hibiznet.pms.framework.com.cmm.LoginVO;
 
 /**
  * 일반 로그인을 처리하는 비즈니스 구현 클래스

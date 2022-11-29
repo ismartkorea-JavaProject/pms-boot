@@ -1,4 +1,4 @@
-package egovframework.com.config;
+package net.hibiznet.pms.framework.com.config;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,10 +14,10 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.AntPathMatcher;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
-import egovframework.com.cmm.EgovComTraceHandler;
-import egovframework.com.cmm.EgovMessageSource;
-import egovframework.com.cmm.ImagePaginationRenderer;
-import egovframework.com.cmm.web.EgovMultipartResolver;
+import net.hibiznet.pms.framework.com.cmm.EgovComTraceHandler;
+import net.hibiznet.pms.framework.com.cmm.EgovMessageSource;
+import net.hibiznet.pms.framework.com.cmm.ImagePaginationRenderer;
+import net.hibiznet.pms.framework.com.cmm.web.EgovMultipartResolver;
 
 import org.egovframe.rte.fdl.cmmn.trace.LeaveaTrace;
 import org.egovframe.rte.fdl.cmmn.trace.handler.TraceHandler;
@@ -44,7 +44,7 @@ import org.egovframe.rte.ptl.mvc.tags.ui.pagination.PaginationRenderer;
  *
  */
 @Configuration
-@ComponentScan(basePackages = "egovframework", includeFilters = {
+@ComponentScan(basePackages = "net.hibiznet.pms,egovframework", includeFilters = {
 	@ComponentScan.Filter(type = FilterType.ANNOTATION, value = Service.class),
 	@ComponentScan.Filter(type = FilterType.ANNOTATION, value = Repository.class)
 }, excludeFilters = {

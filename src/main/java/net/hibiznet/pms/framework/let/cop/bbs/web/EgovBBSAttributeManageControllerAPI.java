@@ -1,4 +1,4 @@
-package egovframework.let.cop.bbs.web;
+package net.hibiznet.pms.framework.let.cop.bbs.web;
 
 import java.util.HashMap;
 import java.util.List;
@@ -18,18 +18,18 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springmodules.validation.commons.DefaultBeanValidator;
 
-import egovframework.com.cmm.ComDefaultCodeVO;
-import egovframework.com.cmm.EgovMessageSource;
-import egovframework.com.cmm.LoginVO;
-import egovframework.com.cmm.ResponseCode;
-import egovframework.com.cmm.service.CmmnDetailCode;
-import egovframework.com.cmm.service.EgovCmmUseService;
-import egovframework.com.cmm.service.ResultVO;
-import egovframework.com.cmm.util.EgovUserDetailsHelper;
-import egovframework.let.cop.bbs.service.BoardMaster;
-import egovframework.let.cop.bbs.service.BoardMasterVO;
-import egovframework.let.cop.bbs.service.EgovBBSAttributeManageService;
-import egovframework.let.utl.fcc.service.EgovStringUtil;
+import net.hibiznet.pms.framework.com.cmm.ComDefaultCodeVO;
+import net.hibiznet.pms.framework.com.cmm.EgovMessageSource;
+import net.hibiznet.pms.framework.com.cmm.LoginVO;
+import net.hibiznet.pms.framework.com.cmm.ResponseCode;
+import net.hibiznet.pms.framework.com.cmm.service.CmmnDetailCode;
+import net.hibiznet.pms.framework.com.cmm.service.EgovCmmUseService;
+import net.hibiznet.pms.framework.com.cmm.service.ResultVO;
+import net.hibiznet.pms.framework.com.cmm.util.EgovUserDetailsHelper;
+import net.hibiznet.pms.framework.let.cop.bbs.service.BoardMaster;
+import net.hibiznet.pms.framework.let.cop.bbs.service.BoardMasterVO;
+import net.hibiznet.pms.framework.let.cop.bbs.service.EgovBBSAttributeManageService;
+import net.hibiznet.pms.framework.let.utl.fcc.service.EgovStringUtil;
 
 import org.egovframe.rte.fdl.cmmn.exception.EgovBizException;
 import org.egovframe.rte.fdl.property.EgovPropertyService;

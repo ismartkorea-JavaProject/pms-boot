@@ -1,4 +1,4 @@
-package egovframework.com.cmm.util;
+package net.hibiznet.pms.framework.com.cmm.util;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
 
-import egovframework.com.cmm.LoginVO;
+import net.hibiznet.pms.framework.com.cmm.LoginVO;
 
 import org.egovframe.rte.fdl.string.EgovObjectUtil;
 

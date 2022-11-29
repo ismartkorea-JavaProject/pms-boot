@@ -1,4 +1,4 @@
-package egovframework.let.cop.com.web;
+package net.hibiznet.pms.framework.let.cop.com.web;
 import java.util.List;
 import java.util.Map;
 
@@ -14,14 +14,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springmodules.validation.commons.DefaultBeanValidator;
 
-import egovframework.com.cmm.ComDefaultCodeVO;
-import egovframework.com.cmm.EgovMessageSource;
-import egovframework.com.cmm.LoginVO;
-import egovframework.com.cmm.service.EgovCmmUseService;
-import egovframework.com.cmm.util.EgovUserDetailsHelper;
-import egovframework.let.cop.com.service.EgovTemplateManageService;
-import egovframework.let.cop.com.service.TemplateInf;
-import egovframework.let.cop.com.service.TemplateInfVO;
+import net.hibiznet.pms.framework.com.cmm.ComDefaultCodeVO;
+import net.hibiznet.pms.framework.com.cmm.EgovMessageSource;
+import net.hibiznet.pms.framework.com.cmm.LoginVO;
+import net.hibiznet.pms.framework.com.cmm.service.EgovCmmUseService;
+import net.hibiznet.pms.framework.com.cmm.util.EgovUserDetailsHelper;
+import net.hibiznet.pms.framework.let.cop.com.service.EgovTemplateManageService;
+import net.hibiznet.pms.framework.let.cop.com.service.TemplateInf;
+import net.hibiznet.pms.framework.let.cop.com.service.TemplateInfVO;
 
 import org.egovframe.rte.fdl.cmmn.exception.EgovBizException;
 import org.egovframe.rte.fdl.property.EgovPropertyService;

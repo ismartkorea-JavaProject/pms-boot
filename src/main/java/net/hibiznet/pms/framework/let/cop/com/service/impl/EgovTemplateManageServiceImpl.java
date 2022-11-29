@@ -1,4 +1,4 @@
-package egovframework.let.cop.com.service.impl;
+package net.hibiznet.pms.framework.let.cop.com.service.impl;
 
 import java.util.HashMap;
 import java.util.List;
@@ -8,9 +8,9 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
-import egovframework.let.cop.com.service.EgovTemplateManageService;
-import egovframework.let.cop.com.service.TemplateInf;
-import egovframework.let.cop.com.service.TemplateInfVO;
+import net.hibiznet.pms.framework.let.cop.com.service.EgovTemplateManageService;
+import net.hibiznet.pms.framework.let.cop.com.service.TemplateInf;
+import net.hibiznet.pms.framework.let.cop.com.service.TemplateInfVO;
 
 import org.egovframe.rte.fdl.cmmn.EgovAbstractServiceImpl;
 import org.egovframe.rte.fdl.idgnr.EgovIdGnrService;
@@ -44,7 +44,7 @@ public class EgovTemplateManageServiceImpl extends EgovAbstractServiceImpl imple
 	/**
 	 * 템플릿 정보를 삭제한다.
 	 *
-	 * @see egovframework.let.cop.bbs.com.service.EgovTemplateManageService#deleteTemplateInf(egovframework.let.cop.bbs.com.service.TemplateInf)
+	 * @see net.hibiznet.pms.framework.let.cop.bbs.com.service.EgovTemplateManageService#deleteTemplateInf(net.hibiznet.pms.framework.let.cop.bbs.com.service.TemplateInf)
 	 */
 	@Override
 	public void deleteTemplateInf(TemplateInf tmplatInf) throws Exception {
@@ -54,7 +54,7 @@ public class EgovTemplateManageServiceImpl extends EgovAbstractServiceImpl imple
 	/**
 	 * 템플릿 정보를 등록한다.
 	 *
-	 * @see egovframework.let.cop.bbs.com.service.EgovTemplateManageService#insertTemplateInf(egovframework.let.cop.bbs.com.service.TemplateInf)
+	 * @see net.hibiznet.pms.framework.let.cop.bbs.com.service.EgovTemplateManageService#insertTemplateInf(net.hibiznet.pms.framework.let.cop.bbs.com.service.TemplateInf)
 	 */
 	@Override
 	public void insertTemplateInf(TemplateInf tmplatInf) throws Exception {
@@ -67,7 +67,7 @@ public class EgovTemplateManageServiceImpl extends EgovAbstractServiceImpl imple
 	/**
 	 * 템플릿에 대한 상세정보를 조회한다.
 	 *
-	 * @see egovframework.let.cop.bbs.com.service.EgovTemplateManageService#selectTemplateInf(egovframework.let.cop.bbs.com.service.TemplateInfVO)
+	 * @see net.hibiznet.pms.framework.let.cop.bbs.com.service.EgovTemplateManageService#selectTemplateInf(net.hibiznet.pms.framework.let.cop.bbs.com.service.TemplateInfVO)
 	 */
 	@Override
 	public TemplateInfVO selectTemplateInf(TemplateInfVO tmplatInfVO) throws Exception {
@@ -79,7 +79,7 @@ public class EgovTemplateManageServiceImpl extends EgovAbstractServiceImpl imple
 	/**
 	 * 템플릿에 대한 목록를 조회한다.
 	 *
-	 * @see egovframework.let.cop.bbs.com.service.EgovTemplateManageService#selectTemplateInfs(egovframework.let.cop.bbs.com.service.TemplateInfVO)
+	 * @see net.hibiznet.pms.framework.let.cop.bbs.com.service.EgovTemplateManageService#selectTemplateInfs(net.hibiznet.pms.framework.let.cop.bbs.com.service.TemplateInfVO)
 	 */
 	@Override
 	public Map<String, Object> selectTemplateInfs(TemplateInfVO tmplatInfVO) throws Exception {
@@ -97,7 +97,7 @@ public class EgovTemplateManageServiceImpl extends EgovAbstractServiceImpl imple
 	/**
 	 * 템플릿에 대한 미리보기 정보를 조회한다.
 	 *
-	 * @see egovframework.let.cop.bbs.com.service.EgovTemplateManageService#selectTemplatePreview(egovframework.let.cop.bbs.com.service.TemplateInfVO)
+	 * @see net.hibiznet.pms.framework.let.cop.bbs.com.service.EgovTemplateManageService#selectTemplatePreview(net.hibiznet.pms.framework.let.cop.bbs.com.service.TemplateInfVO)
 	 */
 	@Override
 	public TemplateInfVO selectTemplatePreview(TemplateInfVO tmplatInfVO) throws Exception {
@@ -111,7 +111,7 @@ public class EgovTemplateManageServiceImpl extends EgovAbstractServiceImpl imple
 	/**
 	 * 템플릿 정보를 수정한다.
 	 *
-	 * @see egovframework.let.cop.bbs.com.service.EgovTemplateManageService#updateTemplateInf(egovframework.let.cop.bbs.com.service.TemplateInf)
+	 * @see net.hibiznet.pms.framework.let.cop.bbs.com.service.EgovTemplateManageService#updateTemplateInf(net.hibiznet.pms.framework.let.cop.bbs.com.service.TemplateInf)
 	 */
 	@Override
 	public void updateTemplateInf(TemplateInf tmplatInf) throws Exception {
@@ -121,7 +121,7 @@ public class EgovTemplateManageServiceImpl extends EgovAbstractServiceImpl imple
 	/**
 	 * 템플릿 구분에 따른 목록을 조회한다.
 	 *
-	 * @see egovframework.let.cop.bbs.com.service.EgovTemplateManageService#selectAllTemplateInfs(egovframework.let.cop.bbs.com.service.TemplateInfVO)
+	 * @see net.hibiznet.pms.framework.let.cop.bbs.com.service.EgovTemplateManageService#selectAllTemplateInfs(net.hibiznet.pms.framework.let.cop.bbs.com.service.TemplateInfVO)
 	 */
 	@Override
 	public List<TemplateInfVO> selectTemplateInfsByCode(TemplateInfVO tmplatInfVO) throws Exception {

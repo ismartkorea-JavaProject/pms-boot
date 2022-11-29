@@ -1,4 +1,4 @@
-package egovframework.com.cmm;
+package net.hibiznet.pms.framework.com.cmm;
 /*
  * Copyright 2002-2005 the original author or authors.
  *

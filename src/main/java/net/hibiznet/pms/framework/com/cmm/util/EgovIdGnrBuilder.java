@@ -1,4 +1,4 @@
-package egovframework.com.cmm.util;
+package net.hibiznet.pms.framework.com.cmm.util;
 
 import javax.sql.DataSource;
 

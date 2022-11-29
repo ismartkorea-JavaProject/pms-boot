@@ -33,7 +33,7 @@ public class ContextApp {
 <XML>
 
 ```xml
-<bean id="egovHandler" class="egovframework.com.cmm.EgovComExcepHndlr" />
+<bean id="egovHandler" class="net.hibiznet.pms.framework.com.cmm.EgovComExcepHndlr" />
 ```
 
 ####  메소드 정의시 @Bean 을 붙인다.
@@ -79,7 +79,7 @@ xml 설정에서 `class`는 `<bean>`의 타입이다. `<bean>` 태그의 필수 
 <XML>
 
 ```xml
-<bean id="defaultExceptionHandleManager" class="egovframework.rte.fdl.cmmn.exception.manager.DefaultExceptionHandleManager">
+<bean id="defaultExceptionHandleManager" class="net.hibiznet.pms.framework.rte.fdl.cmmn.exception.manager.DefaultExceptionHandleManager">
     <property name="reqExpMatcher">
         <ref bean="antPathMatcher"/>
     </property>

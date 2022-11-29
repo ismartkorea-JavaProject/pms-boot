@@ -1,9 +1,9 @@
-package egovframework.com.cmm.service.impl;
+package net.hibiznet.pms.framework.com.cmm.service.impl;
 
 import java.util.List;
 
-import egovframework.com.cmm.service.EgovUserDetailsService;
-import egovframework.com.cmm.util.EgovUserDetailsHelper;
+import net.hibiznet.pms.framework.com.cmm.service.EgovUserDetailsService;
+import net.hibiznet.pms.framework.com.cmm.util.EgovUserDetailsHelper;
 
 import org.egovframe.rte.fdl.cmmn.EgovAbstractServiceImpl;
 

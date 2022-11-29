@@ -1,4 +1,4 @@
-package egovframework.com.config;
+package net.hibiznet.pms.framework.com.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -7,9 +7,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.util.AntPathMatcher;
 
-import egovframework.com.cmm.EgovComExcepHndlr;
-import egovframework.com.cmm.EgovComOthersExcepHndlr;
-import egovframework.com.cmm.interceptor.AopExceptionTransfer;
+import net.hibiznet.pms.framework.com.cmm.EgovComExcepHndlr;
+import net.hibiznet.pms.framework.com.cmm.EgovComOthersExcepHndlr;
+import net.hibiznet.pms.framework.com.cmm.interceptor.AopExceptionTransfer;
+
 import org.egovframe.rte.fdl.cmmn.aspect.ExceptionTransfer;
 import org.egovframe.rte.fdl.cmmn.exception.handler.ExceptionHandler;
 import org.egovframe.rte.fdl.cmmn.exception.manager.DefaultExceptionHandleManager;

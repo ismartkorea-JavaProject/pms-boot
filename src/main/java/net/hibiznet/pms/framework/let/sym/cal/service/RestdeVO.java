@@ -1,4 +1,4 @@
-package egovframework.let.sym.cal.service;
+package net.hibiznet.pms.framework.let.sym.cal.service;
 
 import java.io.Serializable;
 

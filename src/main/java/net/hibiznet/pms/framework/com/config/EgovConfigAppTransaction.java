@@ -1,4 +1,4 @@
-package egovframework.com.config;
+package net.hibiznet.pms.framework.com.config;
 
 import java.util.Collections;
 import java.util.HashMap;

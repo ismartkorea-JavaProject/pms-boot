@@ -1,4 +1,4 @@
-package egovframework.com.config;
+package net.hibiznet.pms.framework.com.config;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
@@ -6,7 +6,7 @@ import javax.servlet.ServletContextListener;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import egovframework.com.cmm.service.EgovProperties;
+import net.hibiznet.pms.framework.com.cmm.service.EgovProperties;
 
 public class EgovWebServletContextListener implements ServletContextListener {
 

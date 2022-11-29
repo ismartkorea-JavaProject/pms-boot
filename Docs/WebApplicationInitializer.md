@@ -112,7 +112,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @Import({ContextAppCommon.class, ContextAppDatasource.class}) 
-@ImportResource("classpath*:egovframework/spring/com/context-*.xml")
+@ImportResource("classpath*:framework/spring/com/context-*.xml")
 public class ContextApp {
    
 }

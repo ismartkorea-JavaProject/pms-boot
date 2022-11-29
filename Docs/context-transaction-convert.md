@@ -20,7 +20,7 @@ Transanction 설정을 관리하는 곳이다.
 </tx:advice>
 
 <aop:config>
-    <aop:pointcut id="requiredTx" expression="execution(* egovframework.let..impl.*Impl.*(..)) or execution(* egovframework.com..*Impl.*(..))"/>
+    <aop:pointcut id="requiredTx" expression="execution(* net.hibiznet.pms.framework.let..impl.*Impl.*(..)) or execution(* net.hibiznet.pms.framework.com..*Impl.*(..))"/>
     <aop:advisor advice-ref="txAdvice" pointcut-ref="requiredTx" />
 </aop:config>
 ```
@@ -72,7 +72,7 @@ private HashMap<String, TransactionAttribute> getRuleBasedTxAttributeMap() {
 public Advisor txAdvisor(DataSourceTransactionManager txManager) {
     AspectJExpressionPointcut pointcut = new AspectJExpressionPointcut();
     pointcut.setExpression(
-        "execution(* egovframework.let..impl.*Impl.*(..)) or execution(* egovframework.com..*Impl.*(..))");
+        "execution(* net.hibiznet.pms.framework.let..impl.*Impl.*(..)) or execution(* net.hibiznet.pms.framework.com..*Impl.*(..))");
     return new DefaultPointcutAdvisor(pointcut, txAdvice(txManager));
 }
 ```

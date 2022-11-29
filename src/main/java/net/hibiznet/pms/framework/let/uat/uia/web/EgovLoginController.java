@@ -1,4 +1,4 @@
-package egovframework.let.uat.uia.web;
+package net.hibiznet.pms.framework.let.uat.uia.web;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
 
-import egovframework.com.cmm.EgovMessageSource;
-import egovframework.com.cmm.LoginVO;
-import egovframework.com.cmm.util.EgovUserDetailsHelper;
-import egovframework.let.uat.uia.service.EgovLoginService;
+import net.hibiznet.pms.framework.com.cmm.EgovMessageSource;
+import net.hibiznet.pms.framework.com.cmm.LoginVO;
+import net.hibiznet.pms.framework.com.cmm.util.EgovUserDetailsHelper;
+import net.hibiznet.pms.framework.let.uat.uia.service.EgovLoginService;
 
 import org.egovframe.rte.fdl.cmmn.trace.LeaveaTrace;
 import org.egovframe.rte.fdl.property.EgovPropertyService;

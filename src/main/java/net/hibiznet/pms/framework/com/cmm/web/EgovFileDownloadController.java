@@ -1,4 +1,4 @@
-package egovframework.com.cmm.web;
+package net.hibiznet.pms.framework.com.cmm.web;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -20,9 +20,9 @@ import org.springframework.util.FileCopyUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import egovframework.com.cmm.service.EgovFileMngService;
-import egovframework.com.cmm.service.FileVO;
-import egovframework.com.cmm.util.EgovUserDetailsHelper;
+import net.hibiznet.pms.framework.com.cmm.service.EgovFileMngService;
+import net.hibiznet.pms.framework.com.cmm.service.FileVO;
+import net.hibiznet.pms.framework.com.cmm.util.EgovUserDetailsHelper;
 
 import org.egovframe.rte.fdl.cmmn.exception.EgovBizException;
 

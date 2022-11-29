@@ -1,4 +1,4 @@
-package egovframework.let.sym.cal.web;
+package net.hibiznet.pms.framework.let.sym.cal.web;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import egovframework.let.sym.cal.service.Restde;
+import net.hibiznet.pms.framework.let.sym.cal.service.Restde;
 
 import org.egovframe.rte.fdl.property.EgovPropertyService;
 

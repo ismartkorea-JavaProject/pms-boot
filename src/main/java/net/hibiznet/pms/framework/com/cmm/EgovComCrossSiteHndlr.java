@@ -1,4 +1,4 @@
-package egovframework.com.cmm;
+package net.hibiznet.pms.framework.com.cmm;
 
 import java.io.IOException;
 import java.io.Reader;

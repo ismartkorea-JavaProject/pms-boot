@@ -11,8 +11,8 @@
 <conext-aspect.xml>
 
 ```xml
-<bean id="egovHandler" class="egovframework.com.cmm.EgovComExcepHndlr" />
-<bean id="otherHandler" class="egovframework.com.cmm.EgovComOthersExcepHndlr" /> 
+<bean id="egovHandler" class="net.hibiznet.pms.framework.com.cmm.EgovComExcepHndlr" />
+<bean id="otherHandler" class="net.hibiznet.pms.framework.com.cmm.EgovComOthersExcepHndlr" /> 
 ```
 
 <ContextAppAspect.class>
@@ -38,7 +38,7 @@ public EgovComOthersExcepHndlr otherHandler() {
 <conext-aspect.xml>
 
 ```xml
-<bean id="defaultExceptionHandleManager" class="egovframework.rte.fdl.cmmn.exception.manager.DefaultExceptionHandleManager">
+<bean id="defaultExceptionHandleManager" class="net.hibiznet.pms.framework.rte.fdl.cmmn.exception.manager.DefaultExceptionHandleManager">
     <property name="reqExpMatcher">
     	<ref bean="antPathMater"/>
     </property>
@@ -75,7 +75,7 @@ public DefaultExceptionHandleManager defaultExceptionHandleManager(ExceptionHand
 <conext-aspect.xml>
 
 ```xml
-<bean id="exceptionTransfer" class="egovframework.rte.fdl.cmmn.aspect.ExceptionTransfer">
+<bean id="exceptionTransfer" class="net.hibiznet.pms.framework.rte.fdl.cmmn.aspect.ExceptionTransfer">
     <property name="exceptionHandlerService">
         <list>
             <ref bean="defaultExceptionHandleManager" />

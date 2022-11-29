@@ -13,7 +13,6 @@ import net.hibiznet.pms.service.PmsService;
 import net.hibiznet.pms.vo.PmsVO;
 
 @Controller
-@RequestMapping("/pms")
 public class PmsMainController {
 
 	
@@ -21,7 +20,7 @@ public class PmsMainController {
     private PmsService pmsService;
     
     
-    @RequestMapping("/selectListPms.do")
+    @RequestMapping("/pms/selectListPms.do")
     public String selectListPms(@ModelAttribute("searchVO") PmsVO pmsVO, ModelMap model) throws Exception {
 
     	ArrayList<PmsVO> resultList = (ArrayList<PmsVO>) pmsService.selectListPms(pmsVO);	
@@ -32,7 +31,7 @@ public class PmsMainController {
     	
     }
     
-    @RequestMapping("/selectOnePms.do")
+    @RequestMapping("/pms/selectOnePms.do")
     public String selectOnePms(@ModelAttribute("searchVO") PmsVO pmsVO, ModelMap model) throws Exception {
 
     	PmsVO result = pmsService.selectPms(pmsVO);	
@@ -43,7 +42,7 @@ public class PmsMainController {
     	
     }
     
-    @RequestMapping("/savePms.do")
+    @RequestMapping("/pms/savePms.do")
     public String savePms(@ModelAttribute("searchVO") PmsVO pmsVO, ModelMap model) throws Exception {
 
     	pmsService.savePms(pmsVO);
@@ -54,7 +53,7 @@ public class PmsMainController {
     	
     }     
     
-    @RequestMapping("/updatePms.do")
+    @RequestMapping("/pms/updatePms.do")
     public String updatePms(@ModelAttribute("searchVO") PmsVO pmsVO, ModelMap model) throws Exception {
 
     	pmsService.updatePms(pmsVO);	
@@ -65,7 +64,7 @@ public class PmsMainController {
     	
     }
     
-    @RequestMapping("/deletePms.do")
+    @RequestMapping("/pms/deletePms.do")
     public String deletePms(@ModelAttribute("searchVO") PmsVO pmsVO, ModelMap model) throws Exception {
 
     	pmsService.deletePms(pmsVO);	

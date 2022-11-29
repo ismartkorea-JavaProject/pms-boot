@@ -5,7 +5,7 @@
 
 
 	<!-- 로그인 처리를 위한 resultMap -->
-	<resultMap id="login" type="egovframework.com.cmm.LoginVO">
+	<resultMap id="login" type="net.hibiznet.pms.framework.com.cmm.LoginVO">
 		<result property="id" column="id"/>
 		<result property="name" column="name"/>
 		<result property="ihidNum" column="ihidNum"/>

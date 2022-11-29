@@ -1,13 +1,13 @@
-package egovframework.let.cop.com.service.impl;
+package net.hibiznet.pms.framework.let.cop.com.service.impl;
 
 import java.util.List;
-
-import egovframework.let.cop.com.service.BoardUseInf;
-import egovframework.let.cop.com.service.BoardUseInfVO;
 
 import org.egovframe.rte.psl.dataaccess.EgovAbstractMapper;
 
 import org.springframework.stereotype.Repository;
+
+import net.hibiznet.pms.framework.let.cop.com.service.BoardUseInf;
+import net.hibiznet.pms.framework.let.cop.com.service.BoardUseInfVO;
 
 /**
  * 게시판 이용정보를 관리하기 위한 데이터 접근 클래스

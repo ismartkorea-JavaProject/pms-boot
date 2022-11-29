@@ -4,7 +4,7 @@
 <mapper namespace="FileManageDAO">
 
 
-	<resultMap id="fileList" type="egovframework.com.cmm.service.FileVO">
+	<resultMap id="fileList" type="net.hibiznet.pms.framework.com.cmm.service.FileVO">
 		<result property="atchFileId" column="ATCH_FILE_ID"/>
 		<result property="fileCn" column="FILE_CN"/>
 		<result property="fileExtsn" column="FILE_EXTSN"/>
@@ -16,7 +16,7 @@
 		<result property="creatDt" column="CREAT_DT"/>			
 	</resultMap>
 
-	<resultMap id="fileDetail" type="egovframework.com.cmm.service.FileVO">
+	<resultMap id="fileDetail" type="net.hibiznet.pms.framework.com.cmm.service.FileVO">
 		<result property="atchFileId" column="ATCH_FILE_ID"/>
 		<result property="fileCn" column="FILE_CN"/>
 		<result property="fileExtsn" column="FILE_EXTSN"/>

@@ -1,9 +1,9 @@
-package egovframework.let.cop.smt.sim.service;
+package net.hibiznet.pms.framework.let.cop.smt.sim.service;
 
 import java.util.List;
 import java.util.Map;
 
-import egovframework.com.cmm.ComDefaultVO;
+import net.hibiznet.pms.framework.com.cmm.ComDefaultVO;
 
 /**
  * 일정관리를 처리하는 서비스인터페이스 클래스

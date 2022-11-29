@@ -1,10 +1,10 @@
-package egovframework.let.cop.bbs.service.impl;
-import egovframework.let.cop.bbs.service.BoardMaster;
-import egovframework.let.cop.bbs.service.BoardMasterVO;
-
+package net.hibiznet.pms.framework.let.cop.bbs.service.impl;
 import org.egovframe.rte.psl.dataaccess.EgovAbstractMapper;
 
 import org.springframework.stereotype.Repository;
+
+import net.hibiznet.pms.framework.let.cop.bbs.service.BoardMaster;
+import net.hibiznet.pms.framework.let.cop.bbs.service.BoardMasterVO;
 
 /**
  * 2단계 기능 추가 (댓글관리, 만족도조사) 관리를 위한 데이터 접근 클래스

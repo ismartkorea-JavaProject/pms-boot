@@ -10,7 +10,7 @@ Table별 채번을 위한 Id Generation을 위한 설정으로 한번에 생성�
 
 ```xml
 <bean name="egovFileIdGnrService"
-      class="egovframework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
+      class="net.hibiznet.pms.framework.rte.fdl.idgnr.impl.EgovTableIdGnrServiceImpl"
       destroy-method="destroy">
     <property name="dataSource" ref="dataSource-${Globals.DbType}" />
     <property name="strategy" ref="fileStrategy" />
@@ -20,7 +20,7 @@ Table별 채번을 위한 Id Generation을 위한 설정으로 한번에 생성�
 </bean>
 
 <bean name="fileStrategy"
-      class="egovframework.rte.fdl.idgnr.impl.strategy.EgovIdGnrStrategyImpl">
+      class="net.hibiznet.pms.framework.rte.fdl.idgnr.impl.strategy.EgovIdGnrStrategyImpl">
     <property name="prefix" value="FILE_" />
     <property name="cipers" value="15" />
     <property name="fillChar" value="0" />

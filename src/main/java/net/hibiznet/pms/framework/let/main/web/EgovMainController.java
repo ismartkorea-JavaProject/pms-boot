@@ -1,4 +1,4 @@
-package egovframework.let.main.web;
+package net.hibiznet.pms.framework.let.main.web;
 
 import java.util.Map;
 
@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
-import egovframework.com.cmm.ComDefaultVO;
-import egovframework.let.cop.bbs.service.BoardVO;
-import egovframework.let.cop.bbs.service.EgovBBSManageService;
+import net.hibiznet.pms.framework.com.cmm.ComDefaultVO;
+import net.hibiznet.pms.framework.let.cop.bbs.service.BoardVO;
+import net.hibiznet.pms.framework.let.cop.bbs.service.EgovBBSManageService;
 
 import org.egovframe.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
 

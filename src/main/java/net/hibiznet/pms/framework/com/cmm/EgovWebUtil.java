@@ -1,4 +1,4 @@
-package egovframework.com.cmm;
+package net.hibiznet.pms.framework.com.cmm;
 
 import java.util.regex.Pattern;
 

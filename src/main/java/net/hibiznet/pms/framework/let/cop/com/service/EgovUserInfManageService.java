@@ -1,4 +1,4 @@
-package egovframework.let.cop.com.service;
+package net.hibiznet.pms.framework.let.cop.com.service;
 
 import java.util.List;
 import java.util.Map;

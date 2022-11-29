@@ -4,7 +4,7 @@
 기존의 web.xml에서 설정을 변환하여 EgovWebApplicationInitializer 에서 설정
 
 ```
-src/main/java/egovframework/com/config/EgovWebApplicationInitializer.java
+src/main/java/net.hibiznet.pms.framework/com/config/EgovWebApplicationInitializer.java
 ```
 
 - [WebApplicationInitial 변환 방법](./WebApplicationInitializer-convert.md)
@@ -13,7 +13,7 @@ src/main/java/egovframework/com/config/EgovWebApplicationInitializer.java
 
 ## 2. context-*.xml 변환
 
-`src/main/java/egovframework/com/config/` 아래에 설정 파일 위치
+`src/main/java/net.hibiznet.pms.framework/com/config/` 아래에 설정 파일 위치
 
 기존 ApplicationContext 레벨의 설정들은 `EgovConfigApp*.java` 로 구성.
 기존 WebApplicationContext 레벨의 설정들은 `EgovConfigWeb*.java` 로 구성 

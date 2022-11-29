@@ -1,4 +1,4 @@
-package egovframework.com.cmm.annotation;
+package net.hibiznet.pms.framework.com.cmm.annotation;
 
 /**
  * 컴포넌트의 포함 정보 표현을 위한 annotation 클래스

@@ -1,4 +1,4 @@
-package egovframework.let.cop.smt.sim.web;
+package net.hibiznet.pms.framework.let.cop.smt.sim.web;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -19,17 +19,17 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springmodules.validation.commons.DefaultBeanValidator;
 
-import egovframework.com.cmm.ComDefaultCodeVO;
-import egovframework.com.cmm.ComDefaultVO;
-import egovframework.com.cmm.EgovMessageSource;
-import egovframework.com.cmm.LoginVO;
-import egovframework.com.cmm.service.EgovCmmUseService;
-import egovframework.com.cmm.service.EgovFileMngService;
-import egovframework.com.cmm.service.EgovFileMngUtil;
-import egovframework.com.cmm.service.FileVO;
-import egovframework.com.cmm.util.EgovUserDetailsHelper;
-import egovframework.let.cop.smt.sim.service.EgovIndvdlSchdulManageService;
-import egovframework.let.cop.smt.sim.service.IndvdlSchdulManageVO;
+import net.hibiznet.pms.framework.com.cmm.ComDefaultCodeVO;
+import net.hibiznet.pms.framework.com.cmm.ComDefaultVO;
+import net.hibiznet.pms.framework.com.cmm.EgovMessageSource;
+import net.hibiznet.pms.framework.com.cmm.LoginVO;
+import net.hibiznet.pms.framework.com.cmm.service.EgovCmmUseService;
+import net.hibiznet.pms.framework.com.cmm.service.EgovFileMngService;
+import net.hibiznet.pms.framework.com.cmm.service.EgovFileMngUtil;
+import net.hibiznet.pms.framework.com.cmm.service.FileVO;
+import net.hibiznet.pms.framework.com.cmm.util.EgovUserDetailsHelper;
+import net.hibiznet.pms.framework.let.cop.smt.sim.service.EgovIndvdlSchdulManageService;
+import net.hibiznet.pms.framework.let.cop.smt.sim.service.IndvdlSchdulManageVO;
 
 import org.egovframe.rte.fdl.cmmn.exception.EgovBizException;
 import org.egovframe.rte.fdl.property.EgovPropertyService;

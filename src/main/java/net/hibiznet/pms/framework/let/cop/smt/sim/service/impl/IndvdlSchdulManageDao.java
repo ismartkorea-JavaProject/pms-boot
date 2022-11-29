@@ -1,12 +1,12 @@
-package egovframework.let.cop.smt.sim.service.impl;
+package net.hibiznet.pms.framework.let.cop.smt.sim.service.impl;
 
 import java.util.List;
 import java.util.Map;
 
 import org.springframework.stereotype.Repository;
 
-import egovframework.com.cmm.ComDefaultVO;
-import egovframework.let.cop.smt.sim.service.IndvdlSchdulManageVO;
+import net.hibiznet.pms.framework.com.cmm.ComDefaultVO;
+import net.hibiznet.pms.framework.let.cop.smt.sim.service.IndvdlSchdulManageVO;
 
 import org.egovframe.rte.psl.dataaccess.EgovAbstractMapper;
 

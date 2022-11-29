@@ -1,4 +1,4 @@
-package egovframework.com.cmm;
+package net.hibiznet.pms.framework.com.cmm;
 
 public enum ResponseCode {
 

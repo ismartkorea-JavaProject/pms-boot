@@ -1,13 +1,13 @@
-package egovframework.let.sym.cal.service.impl;
+package net.hibiznet.pms.framework.let.sym.cal.service.impl;
 
 import java.util.List;
-
-import egovframework.let.sym.cal.service.Restde;
-import egovframework.let.sym.cal.service.RestdeVO;
 
 import org.egovframe.rte.psl.dataaccess.EgovAbstractMapper;
 
 import org.springframework.stereotype.Repository;
+
+import net.hibiznet.pms.framework.let.sym.cal.service.Restde;
+import net.hibiznet.pms.framework.let.sym.cal.service.RestdeVO;
 
 /**
  *

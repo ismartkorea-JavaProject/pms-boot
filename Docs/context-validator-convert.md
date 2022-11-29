@@ -17,8 +17,8 @@ validator 설정 파일들의 위치를 지정해 준다.
     <property name="validationConfigLocations">
         <list>
             <!-- 경량환경 템플릿 밸리데이터 설정 -->
-            <value>classpath:/egovframework/validator/validator-rules-let.xml</value>
-            <value>classpath:/egovframework/validator/let/**/*.xml</value>
+            <value>classpath:/net.hibiznet.pms.framework/validator/validator-rules-let.xml</value>
+            <value>classpath:/net.hibiznet.pms.framework/validator/let/**/*.xml</value>
         </list>
     </property>
 </bean>
@@ -46,13 +46,13 @@ private Resource[] getValidationConfigLocations() {
     List<Resource> validationConfigLocations = new ArrayList<Resource>();
     Resource[] validationRulesConfigLocations = new Resource[] {
         pathMatchingResourcePatternResolver
-            .getResource("classpath:/egovframework/validator/validator-rules-let.xml")
+            .getResource("classpath:/net.hibiznet.pms.framework/validator/validator-rules-let.xml")
     };
 
     Resource[] validationFormSetLocations = new Resource[] {};
     try {
         validationFormSetLocations = pathMatchingResourcePatternResolver
-            .getResources("classpath:/egovframework/validator/let/**/*.xml");
+            .getResources("classpath:/net.hibiznet.pms.framework/validator/let/**/*.xml");
     } catch (IOException e) {
     }
 

@@ -9,7 +9,7 @@
 <context-common.xml>
 
 ```xml
-<context:component-scan base-package="egovframework">
+<context:component-scan base-package="net.hibiznet.pms,egovframework">
     <context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
     <context:include-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
     <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
@@ -19,7 +19,7 @@
 <EgovConfigAppCommon.class>
 
 ```java
-@ComponentScan(basePackages = "egovframework", includeFilters = {
+@ComponentScan(basePackages = "net.hibiznet.pms,egovframework", includeFilters = {
 	@ComponentScan.Filter(type = FilterType.ANNOTATION, value = Service.class),
 	@ComponentScan.Filter(type = FilterType.ANNOTATION, value = Repository.class)
 }, excludeFilters = {

@@ -1,4 +1,4 @@
-package egovframework.let.utl.sim.service;
+package net.hibiznet.pms.framework.let.utl.sim.service;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

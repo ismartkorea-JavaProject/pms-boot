@@ -12,7 +12,7 @@
 --%>
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page import ="egovframework.com.cmm.LoginVO" %>
+<%@ page import ="net.hibiznet.pms.framework.com.cmm.LoginVO" %>
 <div id="skipNav" class="invisible">
     <dl>
         <dt>콘텐츠 바로가기</dt>

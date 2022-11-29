@@ -14,11 +14,11 @@ mapper 설정 파일을 등록해 준다.
 <!-- Mybatis setup for Mybatis Database Layer -->
 <bean id="sqlSession" class="org.mybatis.spring.SqlSessionFactoryBean">		
     <property name="dataSource" ref="dataSource"/>
-    <property name="configLocation" value="classpath:/egovframework/mapper/config/mapper-config.xml" />
+    <property name="configLocation" value="classpath:/framework/mapper/config/mapper-config.xml" />
 
     <property name="mapperLocations">
         <list>
-            <value>classpath:/egovframework/mapper/let/**/*_${Globals.DbType}.xml</value>
+            <value>classpath:/framework/mapper/let/**/*_${Globals.DbType}.xml</value>
         </list>
     </property>
 </bean>
@@ -49,12 +49,12 @@ public SqlSessionFactoryBean sqlSession() {
 
     sqlSessionFactoryBean.setConfigLocation(
         pathMatchingResourcePatternResolver
-        .getResource("classpath:/egovframework/mapper/config/mapper-config.xml"));
+        .getResource("classpath:/framework/mapper/config/mapper-config.xml"));
 
     try {
         sqlSessionFactoryBean.setMapperLocations(
             pathMatchingResourcePatternResolver
-            .getResources("classpath:/egovframework/mapper/let/**/*_" + dbType + ".xml"));
+            .getResources("classpath:/framework/mapper/let/**/*_" + dbType + ".xml"));
     } catch (IOException e) {
         // TODO Exception 처리 필요
     }

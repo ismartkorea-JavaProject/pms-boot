@@ -1,4 +1,4 @@
-package egovframework.let.cop.bbs.web;
+package net.hibiznet.pms.framework.let.cop.bbs.web;
 
 import java.util.List;
 import java.util.Map;
@@ -14,14 +14,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springmodules.validation.commons.DefaultBeanValidator;
 
-import egovframework.com.cmm.ComDefaultCodeVO;
-import egovframework.com.cmm.EgovMessageSource;
-import egovframework.com.cmm.LoginVO;
-import egovframework.com.cmm.service.EgovCmmUseService;
-import egovframework.com.cmm.util.EgovUserDetailsHelper;
-import egovframework.let.cop.bbs.service.BoardMaster;
-import egovframework.let.cop.bbs.service.BoardMasterVO;
-import egovframework.let.cop.bbs.service.EgovBBSLoneMasterService;
+import net.hibiznet.pms.framework.com.cmm.ComDefaultCodeVO;
+import net.hibiznet.pms.framework.com.cmm.EgovMessageSource;
+import net.hibiznet.pms.framework.com.cmm.LoginVO;
+import net.hibiznet.pms.framework.com.cmm.service.EgovCmmUseService;
+import net.hibiznet.pms.framework.com.cmm.util.EgovUserDetailsHelper;
+import net.hibiznet.pms.framework.let.cop.bbs.service.BoardMaster;
+import net.hibiznet.pms.framework.let.cop.bbs.service.BoardMasterVO;
+import net.hibiznet.pms.framework.let.cop.bbs.service.EgovBBSLoneMasterService;
 
 import org.egovframe.rte.fdl.cmmn.exception.EgovBizException;
 import org.egovframe.rte.fdl.property.EgovPropertyService;

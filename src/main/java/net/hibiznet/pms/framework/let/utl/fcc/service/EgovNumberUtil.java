@@ -14,7 +14,7 @@
  *
  */
 
-package egovframework.let.utl.fcc.service;
+package net.hibiznet.pms.framework.let.utl.fcc.service;
 
 import java.security.SecureRandom;
 import java.text.ParseException;

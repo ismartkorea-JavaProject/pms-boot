@@ -1,10 +1,10 @@
-package egovframework.com.cmm.service.impl;
+package net.hibiznet.pms.framework.com.cmm.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import egovframework.com.cmm.LoginVO;
-import egovframework.com.cmm.service.EgovUserDetailsService;
+import net.hibiznet.pms.framework.com.cmm.LoginVO;
+import net.hibiznet.pms.framework.com.cmm.service.EgovUserDetailsService;
 
 import org.egovframe.rte.fdl.cmmn.EgovAbstractServiceImpl;
 

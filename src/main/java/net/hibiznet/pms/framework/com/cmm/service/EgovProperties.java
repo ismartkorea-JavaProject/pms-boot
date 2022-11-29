@@ -1,4 +1,4 @@
-package egovframework.com.cmm.service;
+package net.hibiznet.pms.framework.com.cmm.service;
 
 import java.io.File;
 import java.io.FileInputStream;

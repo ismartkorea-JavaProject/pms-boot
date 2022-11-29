@@ -4,7 +4,7 @@
 <mapper namespace="CmmUseDAO">
 
 
-	<resultMap id="CmmCodeDetail" type="egovframework.com.cmm.service.CmmnDetailCode">
+	<resultMap id="CmmCodeDetail" type="net.hibiznet.pms.framework.com.cmm.service.CmmnDetailCode">
 		<result property="codeId" column="CODE_ID"/>
 		<result property="code" column="CODE"/>
 		<result property="codeNm" column="CODE_NM"/>

@@ -1,4 +1,4 @@
-package egovframework;
+package net.hibiznet.pms.framework;
 
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.Import;
 
-import egovframework.com.config.EgovWebApplicationInitializer;
+import net.hibiznet.pms.framework.com.config.EgovWebApplicationInitializer;
 
 @ServletComponentScan
 @SpringBootApplication

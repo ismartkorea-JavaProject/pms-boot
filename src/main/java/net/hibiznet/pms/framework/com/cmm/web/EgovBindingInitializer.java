@@ -1,4 +1,4 @@
-package egovframework.com.cmm.web;
+package net.hibiznet.pms.framework.com.cmm.web;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

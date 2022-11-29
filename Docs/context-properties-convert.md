@@ -9,7 +9,7 @@
 <context-properties.xml>
 
 ```xml
-<bean name="propertiesService" class="egovframework.rte.fdl.property.impl.EgovPropertyServiceImpl" destroy-method="destroy">
+<bean name="propertiesService" class="net.hibiznet.pms.framework.rte.fdl.property.impl.EgovPropertyServiceImpl" destroy-method="destroy">
     <property name="properties">
         <map>
             <entry key="pageUnit" value="10"/>

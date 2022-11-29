@@ -1,4 +1,4 @@
-package egovframework.com.cmm.interceptor;
+package net.hibiznet.pms.framework.com.cmm.interceptor;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

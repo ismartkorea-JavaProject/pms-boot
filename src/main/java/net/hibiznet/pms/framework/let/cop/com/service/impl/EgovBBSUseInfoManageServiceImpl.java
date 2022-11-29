@@ -1,19 +1,19 @@
-package egovframework.let.cop.com.service.impl;
+package net.hibiznet.pms.framework.let.cop.com.service.impl;
 
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import egovframework.let.cop.com.service.BoardUseInf;
-import egovframework.let.cop.com.service.BoardUseInfVO;
-import egovframework.let.cop.com.service.EgovBBSUseInfoManageService;
-
 import org.egovframe.rte.fdl.cmmn.EgovAbstractServiceImpl;
 
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
+
+import net.hibiznet.pms.framework.let.cop.com.service.BoardUseInf;
+import net.hibiznet.pms.framework.let.cop.com.service.BoardUseInfVO;
+import net.hibiznet.pms.framework.let.cop.com.service.EgovBBSUseInfoManageService;
 
 /**
  * 게시판 이용정보를 관리하기 위한 서비스 구현 클래스
@@ -41,7 +41,7 @@ public class EgovBBSUseInfoManageServiceImpl extends EgovAbstractServiceImpl imp
     /**
      * 게시판 사용 정보를 삭제한다.
      * 
-     * @see egovframework.let.cop.bbs.com.service.EgovBBSUseInfoManageService#deleteBBSUseInf(egovframework.let.cop.bbs.com.service.BoardUseInf)
+     * @see net.hibiznet.pms.framework.let.cop.bbs.com.service.EgovBBSUseInfoManageService#deleteBBSUseInf(net.hibiznet.pms.framework.let.cop.bbs.com.service.BoardUseInf)
      */
     public void deleteBBSUseInf(BoardUseInf bdUseInf) throws Exception {
 	bbsUseDAO.deleteBBSUseInf(bdUseInf);
@@ -50,7 +50,7 @@ public class EgovBBSUseInfoManageServiceImpl extends EgovAbstractServiceImpl imp
     /**
      * 게시판 사용정보를 등록한다.
      * 
-     * @see egovframework.let.cop.bbs.com.service.EgovBBSUseInfoManageService#insertBBSUseInf(egovframework.let.cop.bbs.com.service.BoardUseInf)
+     * @see net.hibiznet.pms.framework.let.cop.bbs.com.service.EgovBBSUseInfoManageService#insertBBSUseInf(net.hibiznet.pms.framework.let.cop.bbs.com.service.BoardUseInf)
      */
     public void insertBBSUseInf(BoardUseInf bdUseInf) throws Exception {
 	bbsUseDAO.insertBBSUseInf(bdUseInf);
@@ -59,7 +59,7 @@ public class EgovBBSUseInfoManageServiceImpl extends EgovAbstractServiceImpl imp
     /**
      * 게시판 사용정보 목록을 조회한다.
      * 
-     * @see egovframework.let.cop.bbs.com.service.EgovBBSUseInfoManageService#selectBBSUseInfs(egovframework.let.cop.bbs.com.service.BoardUseInfVO)
+     * @see net.hibiznet.pms.framework.let.cop.bbs.com.service.EgovBBSUseInfoManageService#selectBBSUseInfs(net.hibiznet.pms.framework.let.cop.bbs.com.service.BoardUseInfVO)
      */
     public Map<String, Object> selectBBSUseInfs(BoardUseInfVO bdUseVO) throws Exception {
 
@@ -77,7 +77,7 @@ public class EgovBBSUseInfoManageServiceImpl extends EgovAbstractServiceImpl imp
     /**
      * 게시판 사용정보를 수정한다.
      * 
-     * @see egovframework.let.cop.bbs.com.service.EgovBBSUseInfoManageService#updateBBSUseInf(egovframework.let.cop.bbs.com.service.BoardUseInf)
+     * @see net.hibiznet.pms.framework.let.cop.bbs.com.service.EgovBBSUseInfoManageService#updateBBSUseInf(net.hibiznet.pms.framework.let.cop.bbs.com.service.BoardUseInf)
      */
     public void updateBBSUseInf(BoardUseInf bdUseInf) throws Exception {
 	bbsUseDAO.updateBBSUseInf(bdUseInf);
@@ -86,7 +86,7 @@ public class EgovBBSUseInfoManageServiceImpl extends EgovAbstractServiceImpl imp
     /**
      * 게시판 사용정보에 대한 상세정보를 조회한다.
      * 
-     * @see egovframework.let.cop.bbs.com.service.EgovBBSUseInfoManageService#selectBBSUseInf(egovframework.let.cop.bbs.com.service.BoardUseInfVO)
+     * @see net.hibiznet.pms.framework.let.cop.bbs.com.service.EgovBBSUseInfoManageService#selectBBSUseInf(net.hibiznet.pms.framework.let.cop.bbs.com.service.BoardUseInfVO)
      */
     public BoardUseInfVO selectBBSUseInf(BoardUseInfVO bdUseVO) throws Exception {
 	return bbsUseDAO.selectBBSUseInf(bdUseVO);
@@ -95,7 +95,7 @@ public class EgovBBSUseInfoManageServiceImpl extends EgovAbstractServiceImpl imp
     /**
      * 동호회에 사용되는 게시판 사용정보를 삭제한다.
      * 
-     * @see egovframework.let.cop.com.service.EgovBBSUseInfoManageService#deleteBBSUseInfByClub(egovframework.let.cop.com.service.BoardUseInf)
+     * @see net.hibiznet.pms.framework.let.cop.com.service.EgovBBSUseInfoManageService#deleteBBSUseInfByClub(net.hibiznet.pms.framework.let.cop.com.service.BoardUseInf)
      */
     public void deleteBBSUseInfByClub(BoardUseInfVO bdUseVO) throws Exception {
 	List<BoardUseInf> result = bbsUseDAO.selectBBSUseInfByClub(bdUseVO);
@@ -116,7 +116,7 @@ public class EgovBBSUseInfoManageServiceImpl extends EgovAbstractServiceImpl imp
     /**
      * 커뮤니티에 사용되는 게시판 사용정보를 삭제한다.
      * 
-     * @see egovframework.let.cop.com.service.EgovBBSUseInfoManageService#deleteBBSUseInfByCmmnty(egovframework.let.cop.com.service.BoardUseInf)
+     * @see net.hibiznet.pms.framework.let.cop.com.service.EgovBBSUseInfoManageService#deleteBBSUseInfByCmmnty(net.hibiznet.pms.framework.let.cop.com.service.BoardUseInf)
      */
     public void deleteBBSUseInfByCmmnty(BoardUseInfVO bdUseVO) throws Exception {
 	List<BoardUseInf> result = bbsUseDAO.selectBBSUseInfByCmmnty(bdUseVO);
@@ -138,7 +138,7 @@ public class EgovBBSUseInfoManageServiceImpl extends EgovAbstractServiceImpl imp
     /**
      * 동호회에 사용되는 모든 게시판 사용정보를 삭제한다.
      * 
-     * @see egovframework.let.cop.com.service.EgovBBSUseInfoManageService#deleteAllBBSUseInfByClub(egovframework.let.cop.com.service.BoardUseInfVO)
+     * @see net.hibiznet.pms.framework.let.cop.com.service.EgovBBSUseInfoManageService#deleteAllBBSUseInfByClub(net.hibiznet.pms.framework.let.cop.com.service.BoardUseInfVO)
      */
     public void deleteAllBBSUseInfByClub(BoardUseInfVO bdUseVO) throws Exception {
 	bbsUseDAO.deleteAllBBSUseInfByClub(bdUseVO);
@@ -147,7 +147,7 @@ public class EgovBBSUseInfoManageServiceImpl extends EgovAbstractServiceImpl imp
     /**
      * 커뮤니티에 사용되는 모든 게시판 사용정보를 삭제한다.
      * 
-     * @see egovframework.let.cop.com.service.EgovBBSUseInfoManageService#deleteAllBBSUseInfByCmmnty(egovframework.let.cop.com.service.BoardUseInfVO)
+     * @see net.hibiznet.pms.framework.let.cop.com.service.EgovBBSUseInfoManageService#deleteAllBBSUseInfByCmmnty(net.hibiznet.pms.framework.let.cop.com.service.BoardUseInfVO)
      */
     public void deleteAllBBSUseInfByCmmnty(BoardUseInfVO bdUseVO) throws Exception {
 	bbsUseDAO.deleteAllBBSUseInfByCmmnty(bdUseVO);
@@ -156,7 +156,7 @@ public class EgovBBSUseInfoManageServiceImpl extends EgovAbstractServiceImpl imp
     /**
      * 게시판에 대한 사용정보를 삭제한다.
      * 
-     * @see egovframework.let.cop.com.service.EgovBBSUseInfoManageService#deleteBBSUseInfByBoardId(egovframework.let.cop.com.service.BoardUseInf)
+     * @see net.hibiznet.pms.framework.let.cop.com.service.EgovBBSUseInfoManageService#deleteBBSUseInfByBoardId(net.hibiznet.pms.framework.let.cop.com.service.BoardUseInf)
      */
     public void deleteBBSUseInfByBoardId(BoardUseInf bdUseInf) throws Exception {
 	bbsUseDAO.deleteBBSUseInfByBoardId(bdUseInf);
@@ -165,7 +165,7 @@ public class EgovBBSUseInfoManageServiceImpl extends EgovAbstractServiceImpl imp
     /**
      * 커뮤니티, 동호회에 사용되는 게시판 사용정보에 대한 목록을 조회한다.
      * 
-     * @see egovframework.let.cop.com.service.EgovBBSUseInfoManageService#selectBBSUseInfsByTrget(egovframework.let.cop.com.service.BoardUseInfVO)
+     * @see net.hibiznet.pms.framework.let.cop.com.service.EgovBBSUseInfoManageService#selectBBSUseInfsByTrget(net.hibiznet.pms.framework.let.cop.com.service.BoardUseInfVO)
      */
     public Map<String, Object> selectBBSUseInfsByTrget(BoardUseInfVO bdUseVO) throws Exception {
 	List<BoardUseInfVO> result = bbsUseDAO.selectBBSUseInfsByTrget(bdUseVO);

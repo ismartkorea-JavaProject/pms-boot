@@ -1,4 +1,4 @@
-package egovframework.com.cmm;
+package net.hibiznet.pms.framework.com.cmm;
 
 import org.egovframe.rte.fdl.cmmn.EgovAbstractServiceImpl;
 

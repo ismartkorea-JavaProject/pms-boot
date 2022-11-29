@@ -1,4 +1,4 @@
-package egovframework.com.config;
+package net.hibiznet.pms.framework.com.config;
 
 import java.util.List;
 import java.util.Properties;
@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.FilterType;
+import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.HandlerExceptionResolver;
@@ -17,8 +18,8 @@ import org.springframework.web.servlet.handler.SimpleMappingExceptionResolver;
 import org.springframework.web.servlet.view.JstlView;
 import org.springframework.web.servlet.view.UrlBasedViewResolver;
 
-import egovframework.com.cmm.interceptor.AuthenticInterceptor;
-import egovframework.com.cmm.interceptor.CustomAuthenticInterceptor;
+import net.hibiznet.pms.framework.com.cmm.interceptor.AuthenticInterceptor;
+import net.hibiznet.pms.framework.com.cmm.interceptor.CustomAuthenticInterceptor;
 
 /**
  * @ClassName : EgovConfigWebDispatcherServlet.java
@@ -38,7 +39,8 @@ import egovframework.com.cmm.interceptor.CustomAuthenticInterceptor;
  *
  */
 @Configuration
-@ComponentScan(basePackages = "egovframework", excludeFilters = {
+@ComponentScan(basePackages = "net.hibiznet.pms,egovframework", excludeFilters = {
+	@ComponentScan.Filter(type = FilterType.ANNOTATION, value = Controller.class),		
 	@ComponentScan.Filter(type = FilterType.ANNOTATION, value = Service.class),
 	@ComponentScan.Filter(type = FilterType.ANNOTATION, value = Repository.class),
 	@ComponentScan.Filter(type = FilterType.ANNOTATION, value = Configuration.class)

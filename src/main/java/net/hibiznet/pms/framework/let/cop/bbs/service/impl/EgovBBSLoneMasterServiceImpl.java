@@ -1,13 +1,13 @@
-package egovframework.let.cop.bbs.service.impl;
+package net.hibiznet.pms.framework.let.cop.bbs.service.impl;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import egovframework.let.cop.bbs.service.BoardMaster;
-import egovframework.let.cop.bbs.service.BoardMasterVO;
-import egovframework.let.cop.bbs.service.EgovBBSLoneMasterService;
-import egovframework.let.cop.com.service.BoardUseInf;
-import egovframework.let.cop.com.service.impl.BBSUseInfoManageDAO;
+import net.hibiznet.pms.framework.let.cop.bbs.service.BoardMaster;
+import net.hibiznet.pms.framework.let.cop.bbs.service.BoardMasterVO;
+import net.hibiznet.pms.framework.let.cop.bbs.service.EgovBBSLoneMasterService;
+import net.hibiznet.pms.framework.let.cop.com.service.BoardUseInf;
+import net.hibiznet.pms.framework.let.cop.com.service.impl.BBSUseInfoManageDAO;
 
 import org.egovframe.rte.fdl.cmmn.EgovAbstractServiceImpl;
 import org.egovframe.rte.fdl.idgnr.EgovIdGnrService;

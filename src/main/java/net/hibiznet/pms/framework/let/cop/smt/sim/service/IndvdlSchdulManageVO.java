@@ -1,4 +1,4 @@
-package egovframework.let.cop.smt.sim.service;
+package net.hibiznet.pms.framework.let.cop.smt.sim.service;
 
 import java.io.Serializable;
 

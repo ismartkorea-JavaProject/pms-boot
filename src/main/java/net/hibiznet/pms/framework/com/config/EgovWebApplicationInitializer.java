@@ -1,4 +1,4 @@
-package egovframework.com.config;
+package net.hibiznet.pms.framework.com.config;
 
 import javax.servlet.FilterRegistration;
 import javax.servlet.ServletContext;
@@ -51,7 +51,7 @@ public class EgovWebApplicationInitializer implements WebApplicationInitializer 
 		// -------------------------------------------------------------
 		// Egov Web ServletContextListener 설정 - System property setting
 		// -------------------------------------------------------------
-		servletContext.addListener(new egovframework.com.config.EgovWebServletContextListener());
+		servletContext.addListener(new net.hibiznet.pms.framework.com.config.EgovWebServletContextListener());
 
 		// -------------------------------------------------------------
 		// 필터설정

@@ -1,4 +1,4 @@
-package egovframework.let.cop.com.web;
+package net.hibiznet.pms.framework.let.cop.com.web;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -22,16 +22,16 @@ import org.springmodules.validation.commons.DefaultBeanValidator;
 //SHT-CUSTOMIZING//import egovframework.let.cop.cmy.service.EgovCommunityManageService;
 //import org.egovframe.rte.fdl.cmmn.exception.EgovBizException;
 
-import egovframework.com.cmm.EgovMessageSource;
-import egovframework.com.cmm.LoginVO;
-import egovframework.com.cmm.ResponseCode;
-import egovframework.com.cmm.service.ResultVO;
-import egovframework.com.cmm.util.EgovUserDetailsHelper;
-import egovframework.let.cop.bbs.service.BoardMasterVO;
-import egovframework.let.cop.bbs.service.EgovBBSAttributeManageService;
-import egovframework.let.cop.com.service.BoardUseInf;
-import egovframework.let.cop.com.service.BoardUseInfVO;
-import egovframework.let.cop.com.service.EgovBBSUseInfoManageService;
+import net.hibiznet.pms.framework.com.cmm.EgovMessageSource;
+import net.hibiznet.pms.framework.com.cmm.LoginVO;
+import net.hibiznet.pms.framework.com.cmm.ResponseCode;
+import net.hibiznet.pms.framework.com.cmm.service.ResultVO;
+import net.hibiznet.pms.framework.com.cmm.util.EgovUserDetailsHelper;
+import net.hibiznet.pms.framework.let.cop.bbs.service.BoardMasterVO;
+import net.hibiznet.pms.framework.let.cop.bbs.service.EgovBBSAttributeManageService;
+import net.hibiznet.pms.framework.let.cop.com.service.BoardUseInf;
+import net.hibiznet.pms.framework.let.cop.com.service.BoardUseInfVO;
+import net.hibiznet.pms.framework.let.cop.com.service.EgovBBSUseInfoManageService;
 
 import org.egovframe.rte.fdl.cmmn.exception.EgovBizException;
 import org.egovframe.rte.fdl.property.EgovPropertyService;

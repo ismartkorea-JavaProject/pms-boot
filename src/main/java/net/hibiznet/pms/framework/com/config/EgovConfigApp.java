@@ -1,4 +1,4 @@
-package egovframework.com.config;
+package net.hibiznet.pms.framework.com.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
