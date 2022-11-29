@@ -24,13 +24,13 @@
 	</resultMap>
 	
 	<select id="selectListPms" resultMap="pmsMap">
-	  select name, eNm, nickNm, age, sex, address1, address2, postno, email, job, sns1_addr, sns2_addr, sns3_addr
+	  select name, e_nm, nick_nm, age, sex, address1, address2, postno, email, job, sns1_addr, sns2_addr, sns3_addr
 	    from pms_info
 	  order by name asc
 	</select>
 	
 	<select id="selectOnePms" resultMap="pmsMap">
-	  select name, eNm, nickNm, age, sex, address1, address2, postno, email, job, sns1_addr, sns2_addr, sns3_addr
+	  select name, e_nm, nick_nm, age, sex, address1, address2, postno, email, job, sns1_addr, sns2_addr, sns3_addr
 	    from pms_info
 	   where name like #{name} || '%'
 	  order by name asc
