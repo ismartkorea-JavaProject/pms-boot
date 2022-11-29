@@ -44,7 +44,7 @@ import org.egovframe.rte.ptl.mvc.tags.ui.pagination.PaginationRenderer;
  *
  */
 @Configuration
-@ComponentScan(basePackages = "net.hibiznet.pms,egovframework", includeFilters = {
+@ComponentScan(basePackages = "net.hibiznet.pms", includeFilters = {
 	@ComponentScan.Filter(type = FilterType.ANNOTATION, value = Service.class),
 	@ComponentScan.Filter(type = FilterType.ANNOTATION, value = Repository.class)
 }, excludeFilters = {
@@ -69,7 +69,7 @@ public class EgovConfigAppCommon {
 		ReloadableResourceBundleMessageSource reloadableResourceBundleMessageSource = new ReloadableResourceBundleMessageSource();
 		String classpath = System.getProperty("java.class.path");
 		reloadableResourceBundleMessageSource.setBasenames(
-			"classpath:/egovframework/message/com/message-common",
+			"classpath:/framework/message/com/message-common",
 			"classpath:/org/egovframe/rte/fdl/idgnr/messages/idgnr",
 			"classpath:/org/egovframe/rte/fdl/property/messages/properties");
 		reloadableResourceBundleMessageSource.setCacheSeconds(60);

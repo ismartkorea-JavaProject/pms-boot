@@ -38,7 +38,7 @@ import org.springframework.jdbc.support.lob.DefaultLobHandler;
  */
 @Configuration
 @PropertySources({
-	@PropertySource("classpath:/egovframework/egovProps/globals.properties")
+	@PropertySource("classpath:/framework/egovProps/globals.properties")
 })
 public class EgovConfigAppMapper {
 	@Autowired
@@ -69,12 +69,12 @@ public class EgovConfigAppMapper {
 
 		sqlSessionFactoryBean.setConfigLocation(
 			pathMatchingResourcePatternResolver
-				.getResource("classpath:/egovframework/mapper/config/mapper-config.xml"));
+				.getResource("classpath:/framework/mapper/config/mapper-config.xml"));
 
 		try {
 			sqlSessionFactoryBean.setMapperLocations(
 				pathMatchingResourcePatternResolver
-					.getResources("classpath:/egovframework/mapper/pms/**/*_" + dbType + ".xml"));
+					.getResources("classpath:/framework/mapper/pms/**/*_" + dbType + ".xml"));
 		} catch (IOException e) {
 			// TODO Exception 처리 필요
 		}

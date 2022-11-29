@@ -39,8 +39,7 @@ import net.hibiznet.pms.framework.com.cmm.interceptor.CustomAuthenticInterceptor
  *
  */
 @Configuration
-@ComponentScan(basePackages = "net.hibiznet.pms,egovframework", excludeFilters = {
-	@ComponentScan.Filter(type = FilterType.ANNOTATION, value = Controller.class),		
+@ComponentScan(basePackages = "net.hibiznet.pms", excludeFilters = {	
 	@ComponentScan.Filter(type = FilterType.ANNOTATION, value = Service.class),
 	@ComponentScan.Filter(type = FilterType.ANNOTATION, value = Repository.class),
 	@ComponentScan.Filter(type = FilterType.ANNOTATION, value = Configuration.class)

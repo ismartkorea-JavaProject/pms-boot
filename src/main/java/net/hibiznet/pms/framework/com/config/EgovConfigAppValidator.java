@@ -60,13 +60,13 @@ public class EgovConfigAppValidator {
 
 		Resource[] validationRulesConfigLocations = new Resource[] {
 			pathMatchingResourcePatternResolver
-				.getResource("classpath:/egovframework/validator/validator-rules-let.xml")
+				.getResource("classpath:/framework/validator/validator-rules-let.xml")
 		};
 
 		Resource[] validationFormSetLocations = new Resource[] {};
 		try {
 			validationFormSetLocations = pathMatchingResourcePatternResolver
-				.getResources("classpath:/egovframework/validator/let/**/*.xml");
+				.getResources("classpath:/framework/validator/let/**/*.xml");
 		} catch (IOException e) {
 			// TODO Exception 처리 필요
 		}
