@@ -1,4 +1,4 @@
-package net.hibzinet.pms.vo;
+package net.hibiznet.pms.vo;
 
 public class PmsVO {
 

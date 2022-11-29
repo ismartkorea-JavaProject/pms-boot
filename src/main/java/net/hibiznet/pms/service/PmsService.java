@@ -1,8 +1,8 @@
-package net.hibzinet.pms.service;
+package net.hibiznet.pms.service;
 
 import java.util.List;
 
-import net.hibzinet.pms.vo.PmsVO;
+import net.hibiznet.pms.vo.PmsVO;
 
 public interface PmsService {
 	

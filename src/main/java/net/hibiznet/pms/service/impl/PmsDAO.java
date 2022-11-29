@@ -1,11 +1,11 @@
-package net.hibzinet.pms.service.impl;
+package net.hibiznet.pms.service.impl;
 
 import java.util.List;
 
 import org.egovframe.rte.psl.dataaccess.EgovAbstractMapper;
 import org.springframework.stereotype.Repository;
 
-import net.hibzinet.pms.vo.PmsVO;
+import net.hibiznet.pms.vo.PmsVO;
 
 @Repository("PmsDAO")
 public class PmsDAO extends EgovAbstractMapper {

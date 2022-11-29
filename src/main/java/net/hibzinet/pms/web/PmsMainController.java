@@ -9,8 +9,8 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import net.hibzinet.pms.service.PmsService;
-import net.hibzinet.pms.vo.PmsVO;
+import net.hibiznet.pms.service.PmsService;
+import net.hibiznet.pms.vo.PmsVO;
 
 @Controller
 @RequestMapping("/pms")

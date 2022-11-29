@@ -1,4 +1,4 @@
-package net.hibzinet.pms.service.impl;
+package net.hibiznet.pms.service.impl;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import javax.annotation.Resource;
 import org.egovframe.rte.fdl.cmmn.EgovAbstractServiceImpl;
 import org.springframework.stereotype.Service;
 
-import net.hibzinet.pms.service.PmsService;
-import net.hibzinet.pms.vo.PmsVO;
+import net.hibiznet.pms.service.PmsService;
+import net.hibiznet.pms.vo.PmsVO;
 
 @Service("PmsService")
 public class PmsServiceImpl extends EgovAbstractServiceImpl implements PmsService {
