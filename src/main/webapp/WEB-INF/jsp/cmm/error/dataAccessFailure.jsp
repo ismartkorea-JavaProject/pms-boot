@@ -30,7 +30,7 @@ function fncGoAfterErrorPage(){
           <tr>
             <td bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
-                <td align="left"><img src="<c:url value='/images/egovframework/com/cmm/er_logo.jpg' />" width="379" height="57" alt="er_logo" /></td>
+                <td align="left"><img src="<c:url value='/images/framework/com/cmm/er_logo.jpg' />" width="379" height="57" alt="er_logo" /></td>
               </tr>
               <tr>
                 <td><br />
