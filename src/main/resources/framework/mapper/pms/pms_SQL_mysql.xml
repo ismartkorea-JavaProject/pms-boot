@@ -4,7 +4,7 @@
 <mapper namespace="PmsDAO">
 
 	<!-- 로그인 처리를 위한 resultMap -->
-	<resultMap id="pms" type="net.hibiznet.pms.vo.PmsVO">
+	<resultMap id="pmsMap" type="net.hibiznet.pms.vo.PmsVO">
 		<result property="name" column="name"/>
 		<result property="eNm" column="e_nm"/>
 		<result property="nickNm" column="nick_nm"/>
@@ -23,13 +23,13 @@
 		<result property="memo3" column="memo3"/>		
 	</resultMap>
 	
-	<select id="selectListPms" resultMap="login">
+	<select id="selectListPms" resultMap="pmsMap">
 	  select name, eNm, nickNm, age, sex, address1, address2, postno, email, job, sns1_addr, sns2_addr, sns3_addr
 	    from pms_info
 	  order by name asc
 	</select>
 	
-	<select id="selectOnePms" resultMap="login">
+	<select id="selectOnePms" resultMap="pmsMap">
 	  select name, eNm, nickNm, age, sex, address1, address2, postno, email, job, sns1_addr, sns2_addr, sns3_addr
 	    from pms_info
 	   where name like #{name} || '%'
