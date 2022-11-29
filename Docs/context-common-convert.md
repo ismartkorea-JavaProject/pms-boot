@@ -9,17 +9,17 @@
 <context-common.xml>
 
 ```xml
-<context:component-scan base-package="net.hibiznet.pms,egovframework">
-    <context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
-    <context:include-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
-    <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+<context:component-scan base-package="net.hibiznet.pms">
+    <context:include-filter type="annotation" expression="org.springnet.hibiznet.pms.framework.stereotype.Service"/>
+    <context:include-filter type="annotation" expression="org.springnet.hibiznet.pms.framework.stereotype.Repository"/>
+    <context:exclude-filter type="annotation" expression="org.springnet.hibiznet.pms.framework.stereotype.Controller"/>
 </context:component-scan>
 ```
 
 <EgovConfigAppCommon.class>
 
 ```java
-@ComponentScan(basePackages = "net.hibiznet.pms,egovframework", includeFilters = {
+@ComponentScan(basePackages = "net.hibiznet.pms", includeFilters = {
 	@ComponentScan.Filter(type = FilterType.ANNOTATION, value = Service.class),
 	@ComponentScan.Filter(type = FilterType.ANNOTATION, value = Repository.class)
 }, excludeFilters = {
@@ -36,12 +36,12 @@
 <context-common.xml>
 
 ```xml
-<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+<bean id="messageSource" class="org.springnet.hibiznet.pms.framework.context.support.ReloadableResourceBundleMessageSource">
     <property name="basenames">
         <list>
-            <value>classpath:/egovframework/message/com/message-common</value>
-            <value>classpath:/egovframework/rte/fdl/idgnr/messages/idgnr</value>
-            <value>classpath:/egovframework/rte/fdl/property/messages/properties</value>
+            <value>classpath:/framework/message/com/message-common</value>
+            <value>classpath:/framework/rte/fdl/idgnr/messages/idgnr</value>
+            <value>classpath:/framework/rte/fdl/property/messages/properties</value>
         </list>
     </property>
     <property name="cacheSeconds">
@@ -58,7 +58,7 @@ public ReloadableResourceBundleMessageSource messageSource() {
     ReloadableResourceBundleMessageSource reloadableResourceBundleMessageSource = new ReloadableResourceBundleMessageSource();
     String classpath = System.getProperty("java.class.path");
     reloadableResourceBundleMessageSource.setBasenames(
-        "classpath:/egovframework/message/com/message-common",
+        "classpath:/framework/message/com/message-common",
         "classpath:/org/egovframe/rte/fdl/idgnr/messages/idgnr",
         "classpath:/org/egovframe/rte/fdl/property/messages/properties");
     reloadableResourceBundleMessageSource.setCacheSeconds(60);
@@ -74,7 +74,7 @@ Exception 발생시 후처리용 별도작업을 위해 실행환경의 DefaultT
 <context-common.xml>
 
 ```xml
-<bean id="traceHandlerService" class="egovframework.rte.fdl.cmmn.trace.manager.DefaultTraceHandleManager">
+<bean id="traceHandlerService" class="net.hibiznet.pms.framework.rte.fdl.cmmn.trace.manager.DefaultTraceHandleManager">
     <property name="reqExpMatcher">
         <ref bean="antPathMater" />
     </property>
@@ -113,7 +113,7 @@ multipart Resolver 설정
 <context-common.xml>
 
 ```xml
-<bean id="spring.RegularCommonsMultipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+<bean id="spring.RegularCommonsMultipartResolver" class="org.springnet.hibiznet.pms.framework.web.multipart.commons.CommonsMultipartResolver">
     <property name="maxUploadSize" value="100000000" />
     <property name="maxInMemorySize" value="100000000" />
 </bean>
