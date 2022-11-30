@@ -23,7 +23,7 @@ public class PmsServiceImpl extends EgovAbstractServiceImpl implements PmsServic
 		return result;
 	}
 	
-	public PmsVO selectPms(PmsVO pmsVO) throws Exception {
+	public PmsVO selectOnePms(PmsVO pmsVO) throws Exception {
 
 		return pmsDAO.selectOnePms(pmsVO);
 	}	
@@ -36,7 +36,7 @@ public class PmsServiceImpl extends EgovAbstractServiceImpl implements PmsServic
 		pmsDAO.updatePms(pmsVO);
 	}
 	
-	public void deletePms(PmsVO pmsVO) throws Exception {
-		pmsDAO.updatePms(pmsVO);
+	public void deleteOnePms(PmsVO pmsVO) throws Exception {
+		pmsDAO.deleteOnePms(pmsVO);
 	}
 }

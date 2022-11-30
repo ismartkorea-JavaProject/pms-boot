@@ -11,7 +11,7 @@ import net.hibiznet.pms.vo.PmsVO;
 public class PmsDAO extends EgovAbstractMapper {
 	
     public PmsVO selectOnePms(PmsVO pmsVO) throws Exception {
-    	return (PmsVO)selectOne("PmsDAO.selectPms", pmsVO);
+    	return (PmsVO)selectOne("PmsDAO.selectOnePms", pmsVO);
     }
     
     @SuppressWarnings("unchecked")

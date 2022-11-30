@@ -1,12 +1,27 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>    
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="ui" uri="http://egovframework.gov/ctl/ui"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>PMS 리스트 화면</title>
+<link href="<c:url value='/'/>bootstrap5/css/bootstrap.css" rel="stylesheet" type="text/css" >
+<script src="<c:url value='/'/>js/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	
+	// 저장버튼 처리.
+	$("#newBtn").click(function() {
+		document.location.href="<c:url value='/pms/savePmsView.do'/>"
+	});
+	
+});
+
+</script>
 </head>
 <body>
  <div id="wrap">
@@ -39,18 +54,14 @@
 							  <tr>
 							    <td nowrap="nowrap"><c:out value="${result.no}"/></td>		    
 							    <td nowrap="nowrap">
-									<a href="<c:url value='/pms/psmDetail.do'/>?no=<c:out value='${result.no}'/>">
+									<a href="<c:url value='/pms/selectOnePms.do'/>?no=<c:out value='${result.no}'/>">
 										<c:out value="${result.name}"/>
 									</a>  
 							    </td>
 							    <td nowrap="nowrap"><c:out value="${result.eNm}"/></td>
 							    <td nowrap="nowrap"><c:out value="${result.age}"/></td>
 							    <td nowrap="nowrap"><c:out value="${result.cellNo}"/></td>
-							    <td nowrap="nowrap"><c:out value="${result.email}"/></td>
-							    <td nowrap="nowrap">
-							    	<c:if test="${result.useAt == 'N'}"><spring:message code="button.notUsed" /></c:if>
-							    	<c:if test="${result.useAt == 'Y'}"><spring:message code="button.use" /></c:if>
-							    </td>  
+							    <td nowrap="nowrap"><c:out value="${result.email}"/></td> 
 							  </tr>
 			                </c:forEach>	  
 							<c:if test="${fn:length(resultList) == 0}">
@@ -60,6 +71,13 @@
 							</c:if>	                    
 	                    </tbody>
                  	</table> 		
+				</div>
+				<div id="buttons">
+					<table>
+						<tr>
+							<td><input type="button" id="newBtn" name="newBtn" value="신규"/></td>
+						</tr>
+					</table>
 				</div>
 	</div> 	
  </div>

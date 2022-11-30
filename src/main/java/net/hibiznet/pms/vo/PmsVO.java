@@ -2,15 +2,15 @@ package net.hibiznet.pms.vo;
 
 public class PmsVO {
 
-	private int no;
+	private String no;
 	private String name;
 	private String eNm;
 	private String nickNm;
-	private int age;
+	private String age;
 	private String sex;
 	private String address1;
 	private String address2;
-	private String postno;
+	private String postNo;
 	private String email;
 	private String job;
 	private String sns1Addr;
@@ -19,11 +19,13 @@ public class PmsVO {
 	private String memo1;
 	private String memo2;
 	private String memo3;
+	private String telNo;
+	private String cellNo;
 	
-	public int getNo() {
+	public String getNo() {
 		return no;
 	}
-	public void setNo(int no) {
+	public void setNo(String no) {
 		this.no = no;
 	}
 	public String getName() {
@@ -44,10 +46,10 @@ public class PmsVO {
 	public void setNickNm(String nickNm) {
 		this.nickNm = nickNm;
 	}
-	public int getAge() {
+	public String getAge() {
 		return age;
 	}
-	public void setAge(int age) {
+	public void setAge(String age) {
 		this.age = age;
 	}
 	public String getSex() {
@@ -68,11 +70,11 @@ public class PmsVO {
 	public void setAddress2(String address2) {
 		this.address2 = address2;
 	}
-	public String getPostno() {
-		return postno;
+	public String getPostNo() {
+		return postNo;
 	}
-	public void setPostno(String postno) {
-		this.postno = postno;
+	public void setPostNo(String postNo) {
+		this.postNo = postNo;
 	}
 	public String getEmail() {
 		return email;
@@ -122,11 +124,25 @@ public class PmsVO {
 	public void setMemo3(String memo3) {
 		this.memo3 = memo3;
 	}
+	public String getTelNo() {
+		return telNo;
+	}
+	public void setTelNo(String telNo) {
+		this.telNo = telNo;
+	}
+	public String getCellNo() {
+		return cellNo;
+	}
+	public void setCellNo(String cellNo) {
+		this.cellNo = cellNo;
+	}
 	@Override
 	public String toString() {
 		return "PmsVO [no=" + no + ", name=" + name + ", eNm=" + eNm + ", nickNm=" + nickNm + ", age=" + age + ", sex="
-				+ sex + ", address1=" + address1 + ", address2=" + address2 + ", postno=" + postno + ", email=" + email
+				+ sex + ", address1=" + address1 + ", address2=" + address2 + ", postNo=" + postNo + ", email=" + email
 				+ ", job=" + job + ", sns1Addr=" + sns1Addr + ", sns2Addr=" + sns2Addr + ", sns3Addr=" + sns3Addr
-				+ ", memo1=" + memo1 + ", memo2=" + memo2 + ", memo3=" + memo3 + "]";
+				+ ", memo1=" + memo1 + ", memo2=" + memo2 + ", memo3=" + memo3 + ", telNo=" + telNo + ", cellNo="
+				+ cellNo + "]";
 	}
+
 }
