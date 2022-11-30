@@ -35,7 +35,7 @@ $(function() {
 <body>
  <div id="wrap">
     <!-- container 시작 -->
-    <div id="container">
+    <div id="container" class="container">
    			<div id="content">
 			<form:form modelAttribute="pms" id="frm" name="frm" method="post" action="/pms/savePms.do">
 			    <input type="hidden" name="no"  value="<c:out value='${result.no}'/>"/>

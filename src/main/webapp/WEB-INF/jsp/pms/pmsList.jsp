@@ -9,6 +9,9 @@
 <head>
 <meta charset="UTF-8">
 <title>PMS 리스트 화면</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<meta name="viewport" content="width=device-width" />
 <link href="<c:url value='/'/>bootstrap5/css/bootstrap.css" rel="stylesheet" type="text/css" >
 <script src="<c:url value='/'/>js/jquery.min.js"></script>
 <script type="text/javascript">
@@ -26,7 +29,7 @@ $(function() {
 <body>
  <div id="wrap">
 	<!-- container 시작 -->
-	<div id="main_container">
+	<div id="main_container" class="container">
                 <div class="default_tablestyle">
                     <table summary="사용자 정보 목록입니다" cellpadding="0" cellspacing="0">
 	                    <caption>사용자목록 리스트</caption>
