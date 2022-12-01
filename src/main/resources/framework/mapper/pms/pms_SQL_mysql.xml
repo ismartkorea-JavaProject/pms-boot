@@ -52,7 +52,7 @@
 	       , sex = #{sex}
 	       , address1 = #{address1}
 	       , address2 = #{address2}
-	       , postno = #{postno}
+	       , postno = #{postNo}
 	       , email = #{email}
 	       , job = #{job}
 	       , sns1_addr = #{sns1Addr}
