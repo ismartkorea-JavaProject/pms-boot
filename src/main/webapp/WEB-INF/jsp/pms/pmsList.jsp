@@ -18,8 +18,14 @@
 <script type="text/javascript">
 $(function() {
 	
+	
 	// 저장버튼 처리.
-	$("#newBtn").click(function() {
+	$("#newTopBtn").click(function() {
+		document.location.href="<c:url value='/pms/savePmsView.do'/>"
+	});	
+	
+	// 저장버튼 처리.
+	$("#newBottonBtn").click(function() {
 		document.location.href="<c:url value='/pms/savePmsView.do'/>"
 	});
 	
@@ -35,7 +41,7 @@ $(function() {
 	<!-- container 시작 -->
 	<div id="main_container" class="container">
 				<div id="buttons" style="text-align:right;">
-					<input type="button" class="btn btn-primary btn-sm" id="newBtn" name="newBtn" value="신규"/>
+					<input type="button" class="btn btn-primary btn-sm" id="newTopBtn" name="newTopBtn" value="신규"/>
 				</div>	
                 <div class="default_tablestyle">
                     <table class="table table-hover">
@@ -74,7 +80,7 @@ $(function() {
                  	</table> 		
 				</div>
 				<div id="buttons" style="text-align:right;">
-					<input type="button" class="btn btn-primary btn-sm" id="newBtn" name="newBtn" value="신규"/>
+					<input type="button" class="btn btn-primary btn-sm" id="newBottonBtn" name="newBottonBtn" value="신규"/>
 				</div>
 	</div>
 	</article>

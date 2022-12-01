@@ -85,6 +85,9 @@ $(function() {
 					<tr>
 						<th scope="row">휴대폰번호</th><td><input type="text" id="cellNo" name="cellNo" value="<c:out value='${result.cellNo}'/>"/></td>
 					</tr>
+                    <tr>
+						<th scope="row">이메일</th><td><input type="text" id="email" name="email" value="<c:out value='${result.email}'/>"/></td>
+					</tr>					
 					<tr>
 						<th scope="row">메모1</th><td><input type="text" id="memo1" name="memo1" value="<c:out value='${result.memo1}'/>"/></td>
 					</tr>			

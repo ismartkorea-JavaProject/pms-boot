@@ -96,6 +96,9 @@ $(function() {
 					<tr>
 						<th scope="row">휴대폰번호</th><td><c:out value='${result.cellNo}'/></td>
 					</tr>
+                    <tr>
+						<th scope="row">이메일</th><td><c:out value='${result.email}'/></td>
+					</tr>					
 				<c:if test="${not empty result.memo1}">	
 					<tr>
 						<th scope="row">메모1</th><td><c:out value='${result.memo1}'/></td>
