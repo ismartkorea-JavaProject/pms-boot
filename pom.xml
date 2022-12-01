@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.hibiznet</groupId>
 	<artifactId>pms</artifactId> 
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 	<version>1.0.0</version>
 	<name>pms</name>
 	<url>pms.hibiznet.net</url>
@@ -341,7 +341,13 @@
 		    <plugin>
 		      <groupId>org.springframework.boot</groupId>
 		      <artifactId>spring-boot-maven-plugin</artifactId>
-		    </plugin>			
+		    </plugin>
+	        <plugin>
+	            <artifactId>maven-war-plugin</artifactId>
+	            <configuration>
+	                <warSourceDirectory>src/main/resources/META-INF/resources</warSourceDirectory>
+	            </configuration>
+	        </plugin>		    			
 		</plugins>
 	</build>
 	
