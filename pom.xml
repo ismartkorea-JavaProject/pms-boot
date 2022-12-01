@@ -68,6 +68,11 @@
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>		
 		<!-- spring boot dependency end -->
 		
 		<dependency>
@@ -243,7 +248,7 @@
 	<build>
 		<defaultGoal>install</defaultGoal>
 		<directory>${basedir}/target</directory>
-		<finalName>sht_webapp</finalName>
+		<finalName>pms</finalName>
 		<pluginManagement>
 			<plugins>
 				<plugin>
@@ -332,6 +337,11 @@
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<!-- <version>3.1.1</version> -->
 			</plugin>
+			<!-- Spring Boot -->
+		    <plugin>
+		      <groupId>org.springframework.boot</groupId>
+		      <artifactId>spring-boot-maven-plugin</artifactId>
+		    </plugin>			
 		</plugins>
 	</build>
 	
