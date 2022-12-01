@@ -13,6 +13,7 @@
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 <meta name="viewport" content="width=device-width" />
 <link href="<c:url value='/'/>bootstrap5/css/bootstrap.css" rel="stylesheet" type="text/css" >
+<link href="<c:url value='/'/>css/pms.css" rel="stylesheet" type="text/css" >
 <script src="<c:url value='/'/>js/jquery.min.js"></script>
 <script type="text/javascript">
 $(function() {
@@ -28,34 +29,31 @@ $(function() {
 </head>
 <body>
  <div id="wrap">
+ 	<header></header>
+ 	<nav></nav>
+ 	<article>
 	<!-- container 시작 -->
 	<div id="main_container" class="container">
+				<div id="buttons" style="text-align:right;">
+					<input type="button" class="btn btn-primary btn-sm" id="newBtn" name="newBtn" value="신규"/>
+				</div>	
                 <div class="default_tablestyle">
-                    <table summary="사용자 정보 목록입니다" cellpadding="0" cellspacing="0">
-	                    <caption>사용자목록 리스트</caption>
-	                    <colgroup>
-	                    <col width="10%">
-	                    <col width="44%">  
-	                    <col width="10%">
-	                    <col width="10%">
-	                    <col width="15%">
-	                    <col width="8%">
-	                    </colgroup>
+                    <table class="table table-hover">
 	                    <thead>
 	                    <tr>
-	                        <th scope="col" class="f_field" nowrap="nowrap">번호</th>
-	                        <th scope="col" nowrap="nowrap">성명</th>
-	                        <th scope="col" nowrap="nowrap">영문명</th>
-	                        <th scope="col" nowrap="nowrap">나이</th>
-	                        <th scope="col" nowrap="nowrap">휴대폰번호</th>
-	                        <th scope="col" nowrap="nowrap">이메일</th>
+	                        <th scope="col">번호</th>
+	                        <th scope="col">성명</th>
+	                        <th scope="col">영문명</th>
+	                        <th scope="col">나이</th>
+	                        <th scope="col">휴대폰번호</th>
+	                        <th scope="col">이메일</th>
 	                    </tr>
 	                    </thead>
 	                    <tbody>
 		                    <c:forEach var="result" items="${resultList}" varStatus="status">
 		                    <!-- loop 시작 -->                                
 							  <tr>
-							    <td nowrap="nowrap"><c:out value="${result.no}"/></td>		    
+							    <th scope="row"><c:out value="${result.no}"/></th>		    
 							    <td nowrap="nowrap">
 									<a href="<c:url value='/pms/selectOnePms.do'/>?no=<c:out value='${result.no}'/>">
 										<c:out value="${result.name}"/>
@@ -75,14 +73,13 @@ $(function() {
 	                    </tbody>
                  	</table> 		
 				</div>
-				<div id="buttons">
-					<table>
-						<tr>
-							<td><input type="button" id="newBtn" name="newBtn" value="신규"/></td>
-						</tr>
-					</table>
+				<div id="buttons" style="text-align:right;">
+					<input type="button" class="btn btn-primary btn-sm" id="newBtn" name="newBtn" value="신규"/>
 				</div>
-	</div> 	
+	</div>
+	</article>
+	<div class="clear"></div>
+ 	<footer></footer>
  </div>
 </body>
 </html>
